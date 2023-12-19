@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainbody"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/round_box">
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/ic_istarte" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/page_title"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/actTitle" />
+        <LinearLayout
+            android:id="@+id/email_outer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            >
+
+            <TextView
+                android:id="@+id/lbl_email"
+                style="@style/input_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actLblEmail" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:drawableLeft="@drawable/ic_email_logo"
+                android:drawablePadding="@dimen/_3sdp"
+                style="@style/InputTypeText"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/error_email"
+                android:layout_width="match_parent"
+                style="@style/error_message"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/phone_outer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            >
+
+            <TextView
+                android:id="@+id/lbl_mobile"
+                style="@style/input_lable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/actLblMobile" />
+
+            <EditText
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40"
+                android:drawableLeft="@drawable/ic_phone_logo"
+                android:drawablePadding="@dimen/_3sdp"
+                style="@style/InputTypeText"
+                android:importantForAutofill="no"
+                android:imeOptions="actionDone"
+                android:inputType="text|phone" />
+            <TextView
+                android:id="@+id/error_phone"
+                android:layout_width="match_parent"
+                style="@style/error_message"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_process"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/height_40"
+            android:background="@drawable/round_box_blue"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_30"
+            >
+
+            <TextView
+                android:id="@+id/process_"
+                style="@style/white_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:drawableLeft="@drawable/ic_process"
+                android:drawablePadding="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="@string/actbtnProcess" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/footer_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/txt_already_acc" />
+
+            <TextView
+                android:id="@+id/go_to_login"
+                style="@style/footer_text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_login_acc" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

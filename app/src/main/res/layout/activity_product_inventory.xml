@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inventory_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lbl_lot_no"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/pro_invent_lot_no"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_cateogry"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pro_invent_category"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_calibre"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pro_invent_calibre"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_origin"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pro_invent_origin"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_supplier"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/pro_invent_supplier"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_icon_1"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="@string/pro_invent_icom_f1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_icom_2"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.7"
+                android:text="@string/pro_invent_icom_f2"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_avail_qty"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/pro_invent_avil_qty"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_trash_qty"
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/pro_invent_trash_qty"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede"
+            app:layout_constraintTop_toBottomOf="@id/l" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inventory_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v" />
+
+        <ImageView
+            android:id="@+id/ivListNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvListNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/currently_there_is_no_data"
+            android:textColor="@color/colorDarkBlue"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivListNull" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

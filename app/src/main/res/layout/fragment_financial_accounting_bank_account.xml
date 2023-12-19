@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/customer_complaint"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingLeft="@dimen/_4sdp"-->
+<!--        android:paddingRight="@dimen/_4sdp"-->
+<!--        android:paddingBottom="@dimen/margin_10">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/headerLinear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/article_code_number"-->
+<!--                style="@style/page_title_inner"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textSize="@dimen/_5sdp" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/accountSearch"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="@dimen/_3sdp"-->
+<!--                android:padding="@dimen/_3sdp"-->
+<!--                android:src="@drawable/ic_search_iasd" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/addBankAccount"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="@dimen/_3sdp"-->
+<!--                android:src="@drawable/ic_detail_add" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:id="@+id/divider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:background="#dedede" />-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="@dimen/_5sdp">-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelBankAccounts"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelLabel"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelType"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelNumber"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelAccountingAccount"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelAccountingCodeJournal"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelCurrency"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelEntriesToReconsile"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/input_lable"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/fabaLabelCreationDate"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textAlignment="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="@dimen/table_layout_h_text_size" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/input_lable"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/fabaLabelModifDate"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textAlignment="center"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="@dimen/table_layout_h_text_size" />&ndash;&gt;-->
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelStatus"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+
+<!--            <TextView-->
+<!--                style="@style/input_lable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/fabaLabelBalance"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="@dimen/table_layout_h_text_size" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:background="#dedede" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/fabaRecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--        </androidx.recyclerview.widget.RecyclerView>-->
+<!--    </LinearLayout>-->
+</RelativeLayout>

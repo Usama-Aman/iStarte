@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cashier_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_top_h"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/customerLayout"
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_25sdp"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cusProfile"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/profile_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_5">
+
+                    <TextView
+                        android:id="@+id/customerProfileName"
+                        style="@style/genral_6s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/customerSirenNo"
+                        style="@style/genral_4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/companyRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@id/customerLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cashierCompanyImage"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profile_placeholder" />
+
+                <TextView
+                    android:id="@+id/cashierCompanyName"
+                    style="@style/genral_6s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cashierCompanyImage"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/headerPayLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/companyRelative"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <TextView
+                    android:id="@+id/lblHeaderStatus"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_payment_status"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/cashierLabelStatus"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/g1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cashierPaymentStatus"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/g1"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderStatus" />
+
+
+                <TextView
+                    android:id="@+id/lblHeaderBalance"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_eblance"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/cashierLabelBalance"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g1"
+                    app:layout_constraintRight_toLeftOf="@id/g2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cashierBalanceAmount"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:text="12 456.00"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g1"
+                    app:layout_constraintRight_toLeftOf="@id/g2"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderBalance" />
+
+                <TextView
+                    android:id="@+id/lblHeaderOverdraft"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_overdraft"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/cashierLabelOverdraft"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g2"
+                    app:layout_constraintRight_toLeftOf="@id/g3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cashierOverdraftAmount"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:text="12 456.00"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g2"
+                    app:layout_constraintRight_toLeftOf="@id/g3"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderOverdraft" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_1sdp">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/cashierTabOrder"
+                            style="@style/tab_button_left_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tab_left_button_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/ic_order_sel"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@string/cashierLabelOrderTab"
+                            android:textColor="@color/colorDarkBlue" />
+
+                        <RadioButton
+                            android:id="@+id/cashierTabCustomer"
+                            style="@style/tab_button_right_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_right_button_selector"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_profile"
+                            android:text="@string/cashierLabelCustomerTab" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cashier_left_tab_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_btw_left_right">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/cashierTabPayment"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_left_button_selector"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/ic_payment_tab"
+                                android:text="@string/cashierLabelPaymentTab" />
+
+                            <RadioButton
+                                android:id="@+id/cashierTabBalance"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_mid_button_selector"
+                                android:button="@null"
+                                android:drawableStart="@drawable/ic_eblance"
+                                android:drawableLeft="@drawable/ic_eblance"
+                                android:text="@string/cashierLabelBalanceTab" />
+
+                            <RadioButton
+                                android:id="@+id/cashierTabCreditNote"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_right_button_selector"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/ic_credit_note"
+                                android:text="@string/cashierLabelCreditNoteTab" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/cashier_right_tab_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

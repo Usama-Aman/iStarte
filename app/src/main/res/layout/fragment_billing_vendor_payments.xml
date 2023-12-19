@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bvpLabelRef"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bvpLabelInvoiceNo"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bvpLabelDate"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bvpLabelSupplierCompanyName"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/bvpLabelPayMethod"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/bvptvPayAmount"
+                android:text="@string/bvpLabelPayAmount"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bvpRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</RelativeLayout>

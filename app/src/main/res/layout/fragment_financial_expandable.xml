@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+
+    <LinearLayout
+        android:id="@+id/searchLinear"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/_16sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_pro_search"
+            style="@style/InputTypeText_noborder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f9f9f9"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/_3sdp"
+            android:hint="@string/proSearch"
+            android:inputType="textPersonName"
+            android:textColor="#0a4e65"
+            android:textColorHint="#0a4e65" />
+
+        <TextView
+            android:id="@+id/btn_add"
+            style="@style/white_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkBlue"
+            android:drawableTop="@drawable/ic_add_pro"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:text="@string/pro_add_product"
+            android:textSize="@dimen/_4sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:groupIndicator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchLinear" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

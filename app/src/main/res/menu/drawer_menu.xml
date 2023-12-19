@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/dashboardGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_drawer"
+            android:title="@string/dashboardPageTitle" />
+    </group>
+    <group
+        android:id="@+id/corporateGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_corporate"
+            android:icon="@drawable/ic_corporate_sel"
+            android:title="@string/corporatePageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/customerGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/ic_profile_sel"
+            android:title="@string/customerPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/supplierGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_supplier"
+            android:icon="@drawable/ic_supplier_sel"
+            android:title="@string/supplierPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/qualityGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_quality"
+            android:icon="@drawable/ic_quality_management_drawer"
+            android:title="@string/qualityPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/financialGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_financial"
+            android:icon="@drawable/ic_financial_sel"
+            android:title="@string/financialDrawerTitle" />
+    </group>
+
+    <group
+        android:id="@+id/salesGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/ic_sales_drawer"
+            android:title="@string/salesPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/orderGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_order_prep"
+            android:icon="@drawable/ic_order_preparation_drawer"
+            android:title="@string/opPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/cashierGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_cashier"
+            android:icon="@drawable/ic_cashier_desk_drawer"
+            android:title="@string/cashierPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/HRGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_hr"
+            android:icon="@drawable/ic_hr_drawer"
+            android:title="@string/hrPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/productGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_product_management_drawer"
+            android:title="@string/proPageTitle" />
+    </group>
+
+    <group
+        android:id="@+id/accountingGroup"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_accounting"
+            android:icon="@drawable/ic_accounting_drawer"
+            android:title="@string/accountingPageTitle" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_1sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ref"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/orderNo"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/thirdParty"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/payMethod"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/debit"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/credit"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/overdue"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/deliverType"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/item_list_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+    </LinearLayout>
+</RelativeLayout>

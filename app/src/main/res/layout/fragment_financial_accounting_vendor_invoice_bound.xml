@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/headerLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/article_code_number"
+                style="@style/page_title_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/faclboundPageTitle"
+                android:textSize="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_search_item" />
+
+            <ImageView
+                android:id="@+id/detail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_detail_edit"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/favlboundLabelChangeBinding"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent">
+
+                    <com.minbio.erp.utils.CustomSearchableSpinner
+                        android:id="@+id/spinnerParentAccount"
+                        style="@style/InputTypeText_bot_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:paddingRight="@dimen/_5sdp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_dropdwon_arror" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btnChangeBinding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorDarkBlue"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/favlboundBtnChangeBinding"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/favlboundLabelIdLine"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelInvoice"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelLabel"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelDate"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelRef"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelDescription"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/favltvboundAmount"
+                android:text="@string/favlboundLabelAmount"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/favltvboundTax"
+                android:text="@string/favlboundLabelTax"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelThirdParty"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favlboundLabelCountry"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight=".5"
+                android:text="@string/favlboundLabelVatID"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/favlboundLabelAccount"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <CheckBox
+                style="@style/input_lable"
+                android:layout_width="wrap_content"
+                android:id="@+id/mainCheckbox"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/favlboundRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/errorNoDataFound"
+                android:textAlignment="center"
+                android:textSize="@dimen/_4sdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

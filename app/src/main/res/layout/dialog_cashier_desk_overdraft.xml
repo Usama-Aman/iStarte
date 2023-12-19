@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_bg"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/titleOverdraft"
+        style="@style/genral_6s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/cdpoLabelOverdraft"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        app:layout_constraintBottom_toBottomOf="@id/closeDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/closeDialog" />
+
+
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOverdraftAllowedText"
+        style="@style/genral_5s"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/closeDialog" />
+
+    <LinearLayout
+        android:id="@+id/btn_dialog_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/round_box_blue"
+        android:gravity="center"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOverdraftAllowedText">
+
+        <TextView
+            android:id="@+id/btnProceedOverdraft"
+            style="@style/white_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_btn_send"
+            android:drawablePadding="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="@string/cdppBtnProceed" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

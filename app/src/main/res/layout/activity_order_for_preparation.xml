@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/supplier_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_15"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_1sdp">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/opTabCustomerList"
+                            style="@style/tab_button_left_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/tab_left_button_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/ic_profile_sel"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@string/opTabCustomerList"
+                            android:textColor="@color/colorDarkBlue" />
+
+                        <RadioButton
+                            android:id="@+id/opTabOrderPending"
+                            style="@style/tab_button_right_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_right_button_selector"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_order_pending"
+                            android:text="@string/opTabOrderPending" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/op_left_tabs_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/orderPrepRightTabRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            app:layout_constraintBottom_toTopOf="@id/btn_order_prep_send"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_4sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                                <LinearLayout
+                                    android:id="@+id/detailHeaderLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoLotNo"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoProduct"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoVariety"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoCatgories"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoCalibre"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoOrigin"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoRequestedQuantity1"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoPackaging"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <TextView
+                                        style="@style/input_lable"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/optvTotal"
+                                        android:layout_weight="1"
+                                        android:text="@string/opPoTotal"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="#dedede" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/orderPrepDetailRecycler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btn_order_prep_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:background="@drawable/round_box_blue_border"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent">
+
+                            <TextView
+                                android:id="@+id/pro_det_text"
+                                style="@style/blue_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:drawableLeft="@drawable/ic_btn_send_blue"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:gravity="center"
+                                android:text="@string/cdcnBtnSend" />
+
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

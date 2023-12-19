@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/headerLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/article_code_number"
+                style="@style/page_title_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/fapaPageTitle"
+                android:textSize="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/addExpenseReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_detail_add"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/searchItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_search_item" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/rbForSale"
+                        style="@style/item_list_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/fapaLabelModeSales"
+                        android:textSize="@dimen/_5sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start"
+                        android:text="@string/fapaLabelModeSalesDesc"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="@dimen/_4sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/rbForSaleExported"
+                        style="@style/item_list_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/fapaLabelModeSalesExported"
+                        android:textSize="@dimen/_5sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start"
+                        android:text="@string/fapaLabelModeSalesExportedDesc"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="@dimen/_4sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/rbPurchase"
+                        style="@style/item_list_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/fapaLabelModePurchase"
+                        android:textSize="@dimen/_5sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start"
+                        android:text="@string/fapaLabelModePurchaseDesc"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="@dimen/_4sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/rbForPurchaseImported"
+                        style="@style/item_list_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/fapaLabelModePurchaseImported"
+                        android:textSize="@dimen/_5sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="start"
+                        android:text="@string/fapaLabelModePurchaseImportedDesc"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="@dimen/_4sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/fapaLabelRef"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fapaLabelLabel"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fapaLabelCurrentDedicatedAccount"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                style="@style/input_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fapaLabelNewAccountToAssign"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <com.minbio.erp.utils.CustomSearchableSpinner
+            android:id="@+id/newAssignedSpinner"
+            style="@style/InputTypeText_bot_border"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fapaRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="@string/errorNoDataFound"
+                android:textAlignment="center"
+                android:textSize="@dimen/_4sdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

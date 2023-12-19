@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/supplier_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_15"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_1sdp">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fruit"
+                            style="@style/tab_button_left_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_btn_left_right_sel"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_supplier_sel"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@string/supplierLabelSupplierList"
+                            android:textColor="@color/colorDarkBlue" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_16sdp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_supplier_search"
+                                style="@style/InputTypeText_noborder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#f9f9f9"
+                                android:drawableLeft="@drawable/ic_search"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:hint="@string/proSearch"
+                                android:inputType="textPersonName"
+                                android:textColor="#0a4e65"
+                                android:textColorHint="#0a4e65" />
+
+                            <TextView
+                                android:id="@+id/supplier_btn_add"
+                                style="@style/white_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorDarkBlue"
+                                android:drawableTop="@drawable/ic_add_cust"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingRight="@dimen/_8sdp"
+                                android:text="@string/pro_add_product"
+                                android:textSize="@dimen/_4sdp" />
+                        </LinearLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                                android:id="@+id/pull_to_refresh_supplier"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/corporate_search_recycler_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                            <TextView
+                                android:id="@+id/tvNoData"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center"
+                                android:text="@string/errorNoDataFound"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/_4sdp"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_btw_left_right">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/supplierTabProfile"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_left_button_selector"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/ic_profile"
+                                android:text="@string/supplierLabelProfile" />
+
+                            <RadioButton
+                                android:id="@+id/supplierTabBalance"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_mid_button_selector"
+                                android:button="@null"
+                                android:drawableStart="@drawable/ic_eblance"
+                                android:drawableLeft="@drawable/ic_eblance"
+                                android:text="@string/supplierLabelBalance" />
+
+                            <RadioButton
+                                android:id="@+id/supplierTabOverdraft"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_mid_button_selector"
+                                android:button="@null"
+                                android:visibility="gone"
+                                android:drawableLeft="@drawable/ic_overdraft"
+                                android:text="@string/supplierLabelOverdraft" />
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/supplierTabOrder"-->
+<!--                                style="@style/tab_button_right_nor"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:background="@drawable/tab_mid_button_selector"-->
+<!--                                android:button="@null"-->
+<!--                                android:drawableLeft="@drawable/ic_order"-->
+<!--                                android:text="@string/supplierLabelOrder" />-->
+
+                            <RadioButton
+                                android:id="@+id/supplierTabSupplierComplaint"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_mid_button_selector"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/ic_customer_complaint"
+                                android:text="@string/supplierLabelSupplierComplaint" />
+
+                            <RadioButton
+                                android:id="@+id/supplierTabCreditNote"
+                                style="@style/tab_button_right_nor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tab_right_button_selector"
+                                android:button="@null"
+                                android:drawableLeft="@drawable/ic_credit_note"
+                                android:text="@string/supplierLabelCreditNote" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/supplier_management_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

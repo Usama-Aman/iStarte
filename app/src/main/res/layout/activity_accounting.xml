@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customer_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_15">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_1sdp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/radioCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/radioCenter"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/accountingTabCustomerList"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_left_button_selector"
+                        android:button="@null"
+                        android:drawableStart="@drawable/ic_profile"
+                        android:text="@string/accountingTabCustomerList" />
+
+                    <RadioButton
+                        android:id="@+id/accountingTabSupplierList"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_mid_button_selector"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_supplier"
+                        android:text="@string/accountingTabSupplierList" />
+
+                    <RadioButton
+                        android:id="@+id/accountingTabInventory"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_right_button_selector"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_inventory"
+                        android:text="@string/accountingTabInventory" />
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toRightOf="@id/radioCenter"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@id/radioCenter"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/accountingTabBalance"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_left_button_selector"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_eblance"
+                        android:text="@string/accountingTabBalance" />
+
+                    <RadioButton
+                        android:id="@+id/accountingTabFileTransfer"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_mid_button_selector"
+                        android:button="@null"
+                        android:drawableStart="@drawable/ic_eblance"
+                        android:drawableLeft="@drawable/ic_eblance"
+                        android:text="@string/accountingTabFileTransfer" />
+
+                    <RadioButton
+                        android:id="@+id/accountingTabCreditNote"
+                        style="@style/tab_button_right_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_right_button_selector"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_file_transfer"
+                        android:text="@string/accountingTabCreditNote" />
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/accounting_left_tabs_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/accounting_right_tabs_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/headerLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/article_code_number"
+                style="@style/page_title_inner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/fariePageTitle"
+                android:textSize="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/addExpenseReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_detail_add"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/searchItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_search_item"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dedede" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelReportName"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start"
+                            android:text="@string/faptoiLabelReportNameText"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelCalculationMode"
+                            android:textSize="@dimen/_5sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/faptoiLabelCalculationModeText"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelReportPeriod"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                        <TextView
+                            android:id="@+id/fromDate"
+                            style="@style/InputTypeText_bot_border"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:drawableEnd="@drawable/ic_calender"
+                            android:drawablePadding="@dimen/_1sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_2sdp"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_5sdp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_2sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:text="-"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="@dimen/_5sdp" />
+
+                        <TextView
+                            android:id="@+id/toDate"
+                            style="@style/InputTypeText_bot_border"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:drawableEnd="@drawable/ic_calender"
+                            android:drawablePadding="@dimen/_1sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_2sdp"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelDescription"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_vertical"
+                            android:text="@string/faptoiLabelDescriptionText"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelBuildOn"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                        <TextView
+                            android:id="@+id/currentDateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="start"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_5sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/btnRefresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@color/colorDarkBlue"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/faptoiBtnRefresh"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_4sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/monthLayout"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/input_lable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="2019"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorDarkBlue"
+                            android:textSize="@dimen/_5sdp"
+                            android:visibility="invisible" />
+
+
+                        <TextView
+                            style="@style/input_lable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/faptoiLabelMonth"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/January"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/February"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/March"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/April"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/May"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/June"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/July"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/August"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/September"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/October"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/November"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/item_list_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/December"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                        <TextView
+                            style="@style/input_lable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="@string/faptoiLabelTotal"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/table_layout_h_text_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dedede" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/faptoiRecyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/monthLayout"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvNoData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="@string/errorNoDataFound"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_4sdp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/monthLayout"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

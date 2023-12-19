@@ -1,0 +1,2138 @@
+<resources>
+    <string name="app_name">Istarte</string>
+
+    <!--Keys-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAald9D0wdy86pmbTX1vWc9KMc-FXx3wzQ</string>
+    <string name="places_api_billing_key" translatable="false">AIzaSyAald9D0wdy86pmbTX1vWc9KMc-FXx3wzQ</string>
+    <string name="stripe__key" translatable="false">pk_live_K9xMzsJIVL58G0I9WBLvgtXQ006zizbseE</string>
+    <string name="test_stripe__key" translatable="false">pk_test_51H06jcG8n0P9fHSa9E2Ji6Nz6crrvC5307J7Y1YyHhVv7kTKCQZAflCMWnDgYr9DS0kr9IOH6WbgvWhv5dRsXGMK00OcnRgJsr</string>
+
+
+    <!--Common Text-->
+    <string name="version">Version</string>
+    <string name="back_pressed_again">Please click BACK again to exit</string>
+    <string name="toastErrorTitle">Error</string>
+    <string name="toastSuccessTitle">Success</string>
+    <string name="errorNoDataFound">No Data found</string>
+    <string name="spinnerBtnClose">Close</string>
+    <string name="countriesSpinnerTitle">Select Country</string>
+    <string name="thirdPartySpinnerTitle">Select Third Party</string>
+    <string name="monthsSpinnerTitle">Select Month</string>
+    <string name="journalizationSpinnerTitle">Select Journalization Status</string>
+    <string name="yearSpinnerTitle">Select Year</string>
+    <string name="dateFormatSpinnerTitle">Select Date Format</string>
+    <string name="accountModelSpinnerTitle">Select Active Account Model</string>
+    <string name="parentAccountSpinnerTitle">Select Parent Account</string>
+    <string name="accountingCodeAccountSpinnerTitle">Select Accounting Code Account</string>
+    <string name="journalCodeAccountSpinnerTitle">Select Journal Code Account</string>
+    <string name="journalSpinnerTitle">Select Journal</string>
+    <string name="saleAccountSpinnerTitle">Select Sale Account</string>
+    <string name="purchaseAccountSpinnerTitle">Select Purchase Account</string>
+    <string name="personalizedGroupAccountSpinnerTitle">Select Personalized Group Account</string>
+    <string name="accountTypeSpinnerTitle">Select Account Type</string>
+    <string name="optionTypeSpinnerTitle">Select One Option</string>
+    <string name="bankAccountTypeSpinnerTitle">Select Account</string>
+    <string name="currencySpinnerTitle">Select Currency</string>
+    <string name="payTypeSpinnerTitle">Select Payment Types</string>
+    <string name="positionSpinnerTitle">Select Position</string>
+    <string name="natureSpinnerTitle">Select Nature</string>
+    <string name="leaveTypeSpinnerTitle">Select Leave Type</string>
+    <string name="leaveTimeSpinnerTitle">Select Leave Time</string>
+    <string name="approvedBySpinnerTitle">Select User</string>
+    <string name="sizeSpinnerTitle">Select Size</string>
+    <string name="vatSpinnerTitle">Select Vat</string>
+    <string name="classSpinnerTitle">Select Class</string>
+    <string name="productSpinnerTitle">Select Product</string>
+    <string name="supplierSpinnerTitle">Select Supplier</string>
+    <string name="sellingPackSpinnerTitle">Select Selling Packing Unit</string>
+    <string name="sellingUnitSpinnerTitle">Select Selling Unit</string>
+    <string name="incomeUnitSpinnerTitle">Select Incoming Unit</string>
+    <string name="sellingVatSpinnerTitle">Select Selling Vat</string>
+    <string name="quantitySpinnerTitle">Select Quantity</string>
+    <string name="newAssignedAccountSpinnerTitle">Select New Account to Assign</string>
+    <string name="productClassesSpinnerTitle">Select Class</string>
+    <string name="complaintTypeSpinnerTitle">Select Complaint Type</string>
+    <string name="trashTypeSpinnerTitle">Select Trashed Topic</string>
+    <string name="statusSpinnerTitle">Select Status</string>
+    <string name="nprSpinnerTitle">Select NPR</string>
+    <string name="taxSpinnerTitle">Select Tax</string>
+    <string name="fileTypeSpinnerTitle">Select File Format</string>
+    <string name="orderNoSpinnerTitle">Select Order No</string>
+    <string name="invoiceNoSpinnerTitle">Select Invoice No</string>
+    <string name="lotNoSpinnerTitle">Select Lot No</string>
+    <string name="handlerNameSpinnerTitle">Select Handler Name</string>
+    <string name="dialogLoadingText">Loading Please wait …</string>
+    <string name="dialogTitle">Loading</string>
+    <string name="locationPermissionDenied">Permission Denied.</string>
+    <string name="pleaseGiveLocationPermission">Please give Location permission .</string>
+    <string name="turnOnLocation">Please Turn on your Location</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_picture">Are you sure you want to delete the picture?</string>
+    <string name="setCurrentLot">Are you sure you want to make this lot as default for VICWSP users?</string>
+    <string name="deleteListItem">Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="currently_there_is_no_data">Currently there is no data</string>
+    <string name="invalid_card">Invalid Card</string>
+    <string name="errorSomethingIsNotRight">Something is not right</string>
+    <string name="dontHaveModulePermission">You don\'t have permission to access this.</string>
+    <string name="no_internet_connection">No internet connection available</string>
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+    <string name="Jan">Jan</string>
+    <string name="Feb">Feb</string>
+    <string name="Mar">Mar</string>
+    <string name="Apr">Apr</string>
+    <string name="Jun">Jun</string>
+    <string name="Jul">Jul</string>
+    <string name="Aug">Aug</string>
+    <string name="Sep">Sep</string>
+    <string name="Oct">Oct</string>
+    <string name="Nov">Nov</string>
+    <string name="Dec">Dec</string>
+
+
+    <!--Activation Page Text-->
+    <string name="actTitle">ACTIVATION</string>
+    <string name="actLblEmail">EMAIL</string>
+    <string name="actLblMobile">MOBILE</string>
+    <string name="actbtnProcess">PROCESS</string>
+    <string name="invalid_email">Please enter a valid email address</string>
+    <string name="invalid_phone">Please enter a valid phone number</string>
+    <string name="txt_already_acc">Already have an account?</string>
+    <string name="txt_login_acc">Login now</string>
+
+    <!--Login Page Text-->
+    <string name="loginTitle">SIGN IN TO YOUR ACCOUNT</string>
+    <string name="loginSirBusiness">SIREN OR COMPANY NAME</string>
+    <string name="loginEmail">EMAIL</string>
+    <string name="loginPassword">PASSWORD</string>
+    <string name="loginRemember">Remember me</string>
+    <string name="loginForget">Forgot Password?</string>
+    <string name="loginButton">LOGIN</string>
+    <string name="loginFooterText">Don\'t have an account?</string>
+    <string name="loginRegisterNow">Register now</string>
+    <string name="login_invalid_email">Please enter a valid email address</string>
+    <string name="login_empty_password">Please enter password</string>
+    <string name="login_empty_siren">Please enter siren or company name</string>
+    <string name="fingerPrintDialogueLabel">Touch your rear sensor to login using finger print.</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="loginAtLeastOne">Please log in at least one time to use finger print</string>
+
+    <!--Forgot Password Page Text-->
+    <string name="forgotPasswordTitle">FORGOT PASSWORD</string>
+    <string name="forgotLabelEmail">EMAIL</string>
+    <string name="forgotBtnSend">SEND</string>
+    <string name="forgotErrorEmail">Please enter email address or mobile number.</string>
+    <string name="forgotErrorFormatNote">Note: Mobile number format must be like +33109758351</string>
+
+    <!--Reset Password Page Text-->
+    <string name="resetPasswordTitle">RESET PASSWORD</string>
+    <string name="resetBtnSend">RESET PASSWORD</string>
+    <string name="resetLabelOTP">OTP</string>
+    <string name="resetLabelPassword">PASSWORD</string>
+    <string name="resetLabelConfirmPassword">CONFIRM PASSWORD</string>
+    <string name="resetErrorOTP">Please enter OTP</string>
+    <string name="resetErrorPassword">Please enter password</string>
+    <string name="resetErrorCPassword">Please enter confirm password</string>
+
+    <!--Register Page text-->
+    <string name="registerTitle">REGISRATION</string>
+    <string name="regLblSiren">SIREN</string>
+    <string name="regLblcorporate">CORPORATE NAME</string>
+    <string name="regLblcorporateAdd">CORPORATE ADDRESS</string>
+    <string name="regLblzipcode">ZIP CODE</string>
+    <string name="regLblCountry">COUNTRY</string>
+    <string name="regLblEmail">EMAIL</string>
+    <string name="regLblContFName">CONTACT FIRST NAME</string>
+    <string name="regLblContLName">CONTACT LAST NAME</string>
+    <string name="regLblContTitle">CONTACT TITLE</string>
+    <string name="regLblMobile">MOBILE</string>
+    <string name="regLblPassword">PASSWORD</string>
+    <string name="regLblConfirmPassword">CONFIRM PASSWORD</string>
+    <string name="registerButton">CREATE AN ACCOUNT</string>
+    <string name="txt_already_reg">Already have an account?</string>
+    <string name="txt_login_reg">Login now</string>
+
+    <string name="reg_siren_empty">Please enter siren number</string>
+    <string name="reg_corp_name_empty">Please enter corporate name</string>
+    <string name="reg_corp_add_emtpy">Please enter corporate address</string>
+    <string name="reg_zipcode_empty">Please enter zip code</string>
+    <string name="reg_country_empty">Please enter country</string>
+    <string name="reg_invalid_email">Please enter a valid email address</string>
+    <string name="reg_confname_empty">Please enter contact first name</string>
+    <string name="reg_conlname_empty">Please enter contact last name</string>
+    <string name="reg_conltitle_empty">Please enter contact title</string>
+    <string name="reg_invalid_phone">Please enter a valid phone number</string>
+    <string name="reg_invalid_password">Please enter password</string>
+    <string name="reg_invalid_Cpassword">Please enter confirm password</string>
+
+    <!--Activate OTP Page Text-->
+    <string name="actOTPTitle">CONFIRMATION</string>
+    <string name="actOTPsubTitle">A confirmation SMS has just been sent to you to validate your account.\n Please enter the 4 digits</string>
+    <string name="actOTPButton">SEND</string>
+    <string name="actOTP_empty_text">Please enter a complete OTP code</string>
+    <string name="txt_already_actOTP">Already have an account?</string>
+    <string name="txt_login_actOTP">Login now</string>
+
+    <!--Product Management  page Text-->
+    <string name="proPageTitle">PRODUCT MANAGEMENT</string>
+    <string name="pro_cat_fruit">Fruits</string>
+    <string name="pro_cat_vegs">Vegs</string>
+    <string name="pro_cat_other">Others</string>
+    <string name="pro_cat_dashboard">Dashboard</string>
+    <string name="proSearch">Search</string>
+    <string name="pro_add_product">Add</string>
+    <string name="pro_lot_de_lot_no">Lot n°</string>
+    <string name="pro_lot_de_lot_quantity">Quantity</string>
+    <string name="pro_lot_de_lot_origin">Origine</string>
+    <string name="pro_lot_de_lot_sell">Sell (%s)</string>
+    <string name="pro_lot_de_lot_incom">Incoming</string>
+    <string name="pro_lot_de_lot_buy">Buy</string>
+    <string name="pro_right_menu_detail">Detail</string>
+    <string name="pro_right_menu_inventory">Inventory</string>
+    <string name="pro_right_menu_cust_comp">Customer Complaint</string>
+    <string name="pro_right_menu_sup_comp">Complaint to supplier</string>
+    <string name="errorPleaseSelectLot">Please select lot </string>
+    <string name="errorPleaseSelectVarity">Please select variety</string>
+
+    <!--Product management Product Detail -->
+    <string name="pro_detail_eu_c_code">EU NC Code</string>
+    <string name="pro_detail_interfel_tax">Interfel Tax</string>
+    <string name="pro_detail_product">Product</string>
+    <string name="pro_detail_varitey">Variety</string>
+    <string name="pro_detail_suplier">Supplier</string>
+    <string name="pro_detail_suplier_del_note">Supplier Delivery Note N°</string>
+    <string name="pro_detail_icomedate">Incoming Date</string>
+    <string name="pro_detail_lot_g_weight">Lot Gross Weight (Kg, Piece, box)</string>
+    <string name="pro_detail_suplier_tare">Supplier Tare (Kg)</string>
+    <string name="pro_detail_buying_price">Buying price</string>
+    <string name="pro_detail_sup_invoice">Supplier Invoice N°</string>
+    <string name="pro_detail_icoming_unit">Incoming Unit (Kg, Piece, box, bag)</string>
+    <string name="pro_detail_icoming_qty">Quantity in income Unite</string>
+    <string name="pro_detail_icoming_pack_qty">Quantity in income Packing</string>
+    <string name="pro_detail_calibre">Calibre</string>
+    <string name="pro_detail_category">Category</string>
+    <string name="pro_detail_origin">Origin</string>
+    <string name="pro_detail_lot_no">Lot N°</string>
+    <string name="pro_detail_supplier_vat">Supplier VAT</string>
+    <string name="pro_detail_other_cost">Other cost</string>
+    <string name="pro_detail_shipping_cost">Shipping Cost</string>
+    <string name="pro_detail_selling_unit">Selling Unit (Kg, Piece, box)</string>
+    <string name="pro_detail_selling_packing">Selling Packing (Kg, Piece, box)</string>
+    <string name="pro_detail_selling_price">Selling price</string>
+    <string name="pro_detail_selling_tare">Selling Tare (Kg, Piece, box)</string>
+    <string name="pro_detail_selling_vat">Selling VAT</string>
+    <string name="pro_detail_article_no">Article Code Number</string>
+    <string name="pro_detail_comment">Comment</string>
+    <string name="pro_detail_add_note_photo">Upload Delivery note / Invoice Product Photo(3 max)</string>
+    <string name="pro_detail_sale_account">Accounting Code (Sale)</string>
+    <string name="pro_detail_purchase_account">Accounting Code (Purchase)</string>
+    <string name="pro_detail_save_button">SAVE</string>
+    <string name="pro_detail_sup_d_note_empty">Please enter Supplier Delivery Note</string>
+    <string name="pro_detail_error_product_name">Please enter product name</string>
+    <string name="pro_detail_error_variety">Please enter variety name</string>
+    <string name="pro_detail_error_supplier">Please enter supplier name</string>
+    <string name="pro_detail_error_supplier_note_no">Please enter supplier note no</string>
+    <string name="pro_detail_error_incoming_date">Please enter incoming date</string>
+    <string name="pro_detail_error_total_weight">Please enter lot gross total weight</string>
+    <string name="pro_detail_error_supplier_tare">Please enter supplier tare</string>
+    <string name="pro_detail_error_buying_price">Please enter buying price</string>
+    <string name="pro_detail_error_supplier_invoice_no">Please enter supplier invoice no</string>
+    <string name="pro_detail_error_incoming_unit">Please enter incoming unit</string>
+    <string name="pro_detail_error_incoming_quantity">Please enter quantity in incoming unite</string>
+    <string name="pro_detail_error_quantity_in_packing">Please enter quantity in income packing</string>
+    <string name="pro_detail_error_calibre">Please enter calibre</string>
+    <string name="pro_detail_error_lot_no">Please enter lot no</string>
+    <string name="pro_detail_error_supplier_vat">Please enter supplier vat</string>
+    <string name="pro_detail_error_other_cost">Please enter other cost</string>
+    <string name="pro_detail_error_shipping_cost">Please enter shipping cost</string>
+    <string name="pro_detail_error_selling_price">Please enter selling price</string>
+    <string name="pro_detail_error_selling_tare">Please enter selling tare</string>
+    <string name="pro_detail_error_selling_vat">Please enter selling vat</string>
+    <string name="pro_detail_error_comment">Please enter comment</string>
+    <string name="pro_detail_error_interfel">Please enter interfel tax</string>
+    <string name="pro_detail_error_product_image">Please attach at least one product image</string>
+    <string name="pro_detail_sale_case_match">The product quantity and sale case should match.</string>
+    <string name="pro_detail_error_delivery_file">Please attach product delivery/ invoice note</string>
+    <string name="pro_detail_error_label_photo">Please attach product label photo</string>
+
+    <!--Product management Product Inventory-->
+    <string name="pro_invent_lot_no">Lot n°</string>
+    <string name="pro_invent_category">Category</string>
+    <string name="pro_invent_calibre">Calibre</string>
+    <string name="pro_invent_origin">Origin</string>
+    <string name="pro_invent_supplier">Supplier</string>
+    <string name="pro_invent_icom_f1">"KG"->from income field</string>
+    <string name="pro_invent_icom_f2">"BOX"->from income field</string>
+    <string name="pro_invent_avil_qty">Available Quantity</string>
+    <string name="pro_invent_trash_qty">Trashed quantity</string>
+
+    <!--Product management Customer complaint-->
+    <string name="pro_cust_comp_lot_no">Lot n°</string>
+    <string name="pro_cust_comp_date">Complaint Date</string>
+    <string name="pro_cust_comp_supplier">Supplier</string>
+    <string name="pro_cust_comp_no">Complaint N°</string>
+    <string name="pro_cust_comp_comment">Comments</string>
+    <string name="pro_cust_comp_photo">Photo</string>
+    <string name="pro_cust_comp_status">Status</string>
+    <string name="pro_cust_comp_status_val_pending">Pending</string>
+    <string name="pro_cust_comp_status_val_close">Closed</string>
+
+    <!--Corporate Management  page Text-->
+    <string name="corporatePageTitle">CORPORATE MANAGEMENT</string>
+    <string name="corporate_left_cat">User</string>
+    <string name="corporate_tab_profile">Profile</string>
+    <string name="corporate_tab_corporate">Corporate</string>
+    <string name="corporate_tab_bank_detail">Bank Detail</string>
+
+    <!--Corporate Management  Profile-->
+    <string name="corporate_label_profile_ID_number">%s (Corporate ID Number)</string>
+    <string name="corporate_label_first_name">First Name</string>
+    <string name="corporate_label_last_name">Last Name</string>
+    <string name="corporate_label_profile_email">Email</string>
+    <string name="corporate_label_position">Position</string>
+    <string name="corporate_label_status">Status</string>
+    <string name="corporate_label__profile_mobile">Mobile</string>
+    <string name="corporate_first_name_error">Please enter first name</string>
+    <string name="corporate_last_name_error">Please enter last name</string>
+    <string name="corporate_email_profile_error">Please enter email address</string>
+    <string name="corporate_mobile_profile_error">Please enter mobile number</string>
+    <string name="corporate_profile_image_error">Please select profile image</string>
+    <string name="corporate_ButtonSave">Save</string>
+
+    <!--Corporate Management  Corporate-->
+    <string name="corporate_label_company_ID_number">%s (Corporate ID Number)</string>
+    <string name="corporate_label_siren">SIREN</string>
+    <string name="corporate_label_EuVAt">EU VAT N°</string>
+    <string name="corporate_label_nafcode">NAF Code</string>
+    <string name="corporate_label_interfetl">Interfel Text</string>
+    <string name="corporate_label_designation">Designation</string>
+    <string name="corporate_label_corporate_address">Corporate Address</string>
+    <string name="corporate_label_zip_code">ZIP Code</string>
+    <string name="corporate_label_country">Country</string>
+    <string name="corporate_label_contact">Contact Title</string>
+    <string name="corporate_label_contact_first_name">Contact First Name</string>
+    <string name="corporate_label_contact_last_name">Contact Last Name</string>
+    <string name="corporate_label_mobile">Mobile</string>
+    <string name="corporate_label_email">Email</string>
+    <string name="corporate_label_user_no">User Number</string>
+    <string name="corporate_designation_error">Please enter designation</string>
+    <string name="corporate_address_error">Please enter corporate address</string>
+    <string name="corporate_zip_code_error">Please enter corporate ZIP code</string>
+    <string name="corporate_contact_title_error">Please enter contact title</string>
+    <string name="corporate_contact_first_name_error">Please enter contact first name</string>
+    <string name="corporate_contact_last_name_error">Please enter contact last name</string>
+    <string name="corporate_mobile_error">Please enter mobile number</string>
+    <string name="corporate_email_error">Please enter email address</string>
+    <string name="corporate_user_number_error">Please enter user number</string>
+    <string name="corporateButtonSave">Save</string>
+
+
+    <!--Corporate Management  Bank Detail-->
+    <string name="corporate_label_bank_ID_number">%s (Corporate ID Number)</string>
+    <string name="bank_detail_label_siren">SIREN</string>
+    <string name="bank_detail_label_EuVAt">EU VAT N°</string>
+    <string name="bank_detail_label_nafcode">NAF Code</string>
+    <string name="bank_detail_label_interfetl">Interfel Text</string>
+    <string name="bank_detail_label_IBAN">IBAN</string>
+    <string name="bank_detail_label_BIC_code">BIC Code</string>
+    <string name="bank_detail_label_RID">Upload Bank Details File(RID)</string>
+    <string name="bank_detail_IBAN_error">Please enter IBAN</string>
+    <string name="bank_detail_BIC_code_error">Please enter BIC code</string>
+    <string name="bank_detail_RID_file_error">Please attach bank details file</string>
+    <string name="bank_detail_ButtonSave">Save</string>
+
+
+    <!--Quality Management  page Text-->
+    <string name="qualityPageTitle">QUALITY MANAGEMENT</string>
+    <string name="qualityLabelFruits">Fruits</string>
+    <string name="qualityLabelVegs">Vegs</string>
+    <string name="qualityLabelOthers">Others</string>
+    <string name="qualityLabelIncoming">Incoming</string>
+    <string name="qualityLabelComplaintToSupplies">Complaint to supplier</string>
+    <string name="qualityLabelLostTrashed">Lost (Trashed)</string>
+    <string name="errorQualityVarietySelect">Please select a product variety first</string>
+    <string name="errorQualityLotSelect">Please select a product lot first</string>
+
+
+    <!--Quality Management  Incoming-->
+    <string name="incomingLabelProduct">Product</string>
+    <string name="incomingLabelVariety">Variety</string>
+    <string name="incomingLabelCategory">Category</string>
+    <string name="incomingLabelOrigin">Origin</string>
+    <string name="incomingLabelSupplier">Supplier</string>
+    <string name="incomingLabelSupplierDeliveryNote">Supplier Delivery Note N°</string>
+    <string name="incomingLabelIncomingDate">Incoming Date</string>
+    <string name="incomingLabelLotGrossWeight">Lot Gross Weight (Kg, Piece, box)</string>
+    <string name="incomingLabelSupplierTare">Supplier Tare</string>
+    <string name="incomingLabelIncomingUnit">Incoming Unit</string>
+    <string name="incomingLabelCalibre">Calibre</string>
+    <string name="incomingLabelQuantityIncomeUnite">Quantity in income Unite</string>
+    <string name="incomingLabelQuantityIncomePacking">Quantity in income Packing</string>
+    <string name="incomingLabelLot">Lot N°</string>
+    <string name="incomingLabelBuyingPrice">Buying Price</string>
+    <string name="incomingLabelShippingCost">Shipping Cost</string>
+    <string name="incomingLabelSupplierOthertax">Supplier Other Tax</string>
+    <string name="incomingLabelSupplierVAT">Supplier VAT</string>
+    <string name="incomingLabelSupplierInvoice">Supplier Invoice N°</string>
+    <string name="incomingLabelComment">Comment</string>
+    <string name="incomingLabelUploadDeliveryNote">Upload Delivery Note/Invoice</string>
+    <string name="incomingLabelUploadPhotos">Label Photos (1 max)</string>
+    <string name="incomingLabelProductPhotos">Product Photos (3 max)</string>
+    <string name="incomingButtonSave">SAVE</string>
+    <string name="incomingButtonSetCurrentLot">Set Default Lot</string>
+    <string name="incomingErrorVariety">Please enter variety</string>
+    <string name="incomingErrorSupplierDeliveryNote">Please enter supplier delivery note</string>
+    <string name="incomingErrorIncomingDate">Please enter incoming date</string>
+    <string name="incomingErrorLotGrossWeight">Please enter lot gross weight</string>
+    <string name="incomingErrorSupplierTare">Please enter supplier tare</string>
+    <string name="incomingErrorIncomingUnit">Please enter supplier incoming unit</string>
+    <string name="incomingErrorCalibre">Please enter calibre</string>
+    <string name="incomingErrorQuantityIncomeUnite">Please enter quantity in income unite</string>
+    <string name="incomingErrorQuantityIncomePacking">Please enter quantity in income packing</string>
+    <string name="incomingErrorLotNo">Please enter lot no</string>
+    <string name="incomingErrorBuyingPrice">Please enter buying price</string>
+    <string name="incomingErrorShippingCost">Please enter shipping cost</string>
+    <string name="incomingErrorSupplierOtherTax">Please enter supplier other tax</string>
+    <string name="incomingErrorSupplierVat">Please enter supplier vat</string>
+    <string name="incomingErrorSupplierInvoiceNo">Please enter supplier invoice no</string>
+    <string name="incomingErrorComment">Please enter comment</string>
+    <string name="incomingErrorDeliveryNoteImage">Please attach delivery note/invoice</string>
+    <string name="incomingErrorLabelPhoto">Please attach label photo</string>
+    <string name="incomingErrorProductPhoto">Please attach at least one product photo</string>
+
+
+    <!--Quality Management  Complaint To Supplier-->
+    <string name="qcLabelComplaintToSupplier">Complaint To Supplier</string>
+    <string name="qcLabelLot_no">Lot N°</string>
+    <string name="qcLabelComplaintDate">Complaint Date</string>
+    <string name="qcLabelComplaintNo">Complaint N°</string>
+    <string name="qcLabelSupplier">Supplier</string>
+    <string name="qcLabelContactName">Contact Name</string>
+    <string name="qcLabelEmail">Email</string>
+    <string name="qcLabelMobileMumber">Mobile Number</string>
+    <string name="qcLabelComplaintTopic">Topic of the complaint</string>
+    <string name="qcLabelComment">Comment</string>
+    <string name="qcLabelComplaintPhoto">Complaint Photo (3 photos)</string>
+    <string name="qcLabelStatus">Status</string>
+    <string name="qcButtonSend">SEND</string>
+    <string name="qcErrorComplaintDate">Please enter complaint date</string>
+    <string name="qcErrorComplaintNo">Please enter complaint no</string>
+    <string name="qcErrorContactName">Please enter contact name</string>
+    <string name="qcErrorEmail">Please enter email</string>
+    <string name="qcErrorMobileNo">Please enter mobile number</string>
+    <string name="qcErrorComment">Please enter comment</string>
+    <string name="qcErrorComplaintPhoto">Please attach at least one complaint photo</string>
+
+
+    <!--Quality Management  Lost Trashed-->
+    <string name="qtLabelLostTrashed">Lost (Trashed)</string>
+    <string name="qtLabelNcCode">EU NC Code</string>
+    <string name="qtLabelLotNo">Lot N°</string>
+    <string name="qtLabelTrashedDate">Trashed Date</string>
+    <string name="qtLabelTrashedNo">Trashed N°</string>
+    <string name="qtLabelQuantityIncoming">Quantity (in incoming unite - KG or Box or Piece)</string>
+    <string name="qtLabelHandlerName">Handler Name</string>
+    <string name="qtLabelEmail">Email</string>
+    <string name="qtLabelTrashTopic">Topic of the Trash</string>
+    <string name="qtLabelComment">Comment</string>
+    <string name="qtLabelhandlerPhotos">Handler Photos (3 Photos)</string>
+    <string name="qtLabelStatus">Status</string>
+    <string name="qtButtonSend">SEND</string>
+    <string name="qtErrorTrashedDate">Please enter trashed date</string>
+    <string name="qtErrorTrashedNo">Please enter trashed no</string>
+    <string name="qtErrorQuantityIncomeUnite">Please enter quantity in incoming unite</string>
+    <string name="qtErrorHandlerName">Please enter handler name</string>
+    <string name="qtErrorEmail">Please enter email</string>
+    <string name="qtErrorComment">Please enter comment</string>
+    <string name="qtErrorHandlerPhotos">Please attach at least one handler photo</string>
+
+
+    <!--Customer Management page text-->
+    <string name="customerPageTitle">CUSTOMER MANAGEMENT</string>
+    <string name="customerLabelStatus">Status</string>
+    <string name="customerLabelBalance">Balance</string>
+    <string name="customerLabelOverdraft">Overdraft</string>
+    <string name="customerLabelSiren">SIREN: %s</string>
+    <string name="customerLabelCustomerList">Customer List</string>
+    <string name="customerLabelProfile">Profile</string>
+    <string name="customerLabelOrder">Order</string>
+    <string name="customerLabelCustomerComplaint">Customer Complaint</string>
+    <string name="customerLabelCreditNote">Credit Note</string>
+    <string name="customer_data_added_to_cart">Customer Data added successfully in Cart</string>
+    <string name="customer_already_added_in_cart">Customer Data Already Added in Cart</string>
+    <string name="errorCustomerSelect">Please select a customer first</string>
+
+    <!--Customer Management Profile -->
+    <string name="cmpLabelCustomerId">%s (CustomerID Number)</string>
+    <string name="cmpLabelSIREN">SIREN</string>
+    <string name="cmpLabelEUVAT">EU VAT N°</string>
+    <string name="cmpLabelIntterferalTax">Interfel Tax</string>
+    <string name="cmpLabelOverdraft">Overdraft</string>
+    <string name="cmpLabelCompanyName">Company Name</string>
+    <string name="cmpLabelAddress">Address</string>
+    <string name="cmpLabelCountry">Country</string>
+    <string name="cmpLabelContactFullName">Contact Full Name</string>
+    <string name="cmpLabelMobile">Mobile</string>
+    <string name="cmpLabelEmail">Email</string>
+    <string name="cmpBtnSave">SAVE</string>
+    <string name="cmpLabelUploadKbisID">Upload Kbis &amp; ID</string>
+    <string name="cmpErrorOverdraft">Please enter overdraft</string>
+    <string name="cmpErrorCompanyName">Please enter company name</string>
+    <string name="cmpErrorAddress">Please enter address</string>
+    <string name="cmpErrorContactFullName">Please enter contact full name</string>
+    <string name="cmpErrorMobile">Please enter mobile number</string>
+    <string name="cmpErrorEmail">Please enter email address</string>
+    <string name="cmpErrorSiren">Please enter siren no</string>
+    <string name="cmpErrorCustomerImage">Please attach profile image</string>
+    <string name="cmpErrorKbisImage">Please attach KBIS image</string>
+    <string name="cmpErrorIDImage">Please attach ID image</string>
+
+    <!--Customer Management Balance -->
+    <string name="cmbLabelCustomerId">CustomerID</string>
+    <string name="cmbLabelInvoiceNo">Invoice N°</string>
+    <string name="cmbLabelInvoiceDate">Invoice Date</string>
+    <string name="cmbLabelPaymentMethod">Payment Method</string>
+    <string name="cmbLabelDebit">Debit(%s)</string>
+    <string name="cmbLabelCredit">Credit(%s)</string>
+    <string name="cmbLabelStatus">Status</string>
+    <string name="cmbLabelOverdue">Overdraft(%s)</string>
+    <string name="cmbLabelOrderNo">Order N°</string>
+
+    <!--Customer Management Overdraft -->
+    <string name="cmoLabelCustomerIDNumber">%s (Customer ID Number)</string>
+    <string name="cmoLabelAllowOverdraft">Allow overdraft to this customer?</string>
+    <string name="cmoLabelHowMuchOverdraftAllow">How much overdraft is allowed to this customer?</string>
+    <string name="cmoLabelTakeCoverage">Do you want to take coverage?</string>
+    <string name="amountGreatorThanCoverage">You have received %1s overdraft amount from ISTARTE. Your remaining amount to pay is %2s . Please pay remaining amount with below given option.</string>
+    <string name="amountLessThanCoverage">You have received %s overdraft amount from ISTARTE. Please click below button to complete order.</string>
+    <string name="cmoLabelPayOverdraft">This customer has pending overdraft of %s Please pay the pending overdraft.</string>
+    <string name="cmoLabelPayOverdraftDialogTitle">Pay Overdraft.</string>
+    <string name="cmoLabelAssuranceScoring">Assurance Scoring</string>
+    <string name="cmoLabelOurScoring">Our Scoring</string>
+    <string name="cmoLabelOverdraftAllow">Overdraft Allow (max)</string>
+    <string name="cmoLabelTotalOverdue">Total Overdue</string>
+    <string name="cmoLabelProfileStatus">Profile Status</string>
+    <string name="cmoLabelPayMethod">Payment Method</string>
+    <string name="cmoBtnSace">SAVE</string>
+    <string name="cmoErrorOverdraftAllow">Please enter overdraft allow</string>
+    <string name="cmoErrorTotalOverdue">Please enter total overdue</string>
+    <string name="cmoErrorStatus">Please enter profile status</string>
+
+    <!--Customer Management Order -->
+    <string name="cmOrderLabelCustomerID">Customer ID</string>
+    <string name="cmOrderLabelOrderNo">Order N°</string>
+    <string name="cmOrderLabelOrderDate">Order Date</string>
+    <string name="cmOrderLabelTime">Time</string>
+    <string name="cmOrderLabelStatus1">Status</string>
+    <string name="cmOrderLabelDelivery">Delivery</string>
+    <string name="cmOrderLabelInvoice">Invoice</string>
+    <string name="cmOrderLabelDate">Date</string>
+    <string name="cmOrderLabelPayStatus">Payment Status</string>
+    <string name="cmOrderLabelPrice">Price(%s)</string>
+    <string name="cmOrderLabelOverdue">Overdraft(%s)</string>
+
+    <!--Customer Management Complaint -->
+    <string name="cmCustComplaintLabelHeaderCutomerID">123456789 (Customer ID)</string>
+    <string name="cmCustComplaintLabelOrderNo">Order N°</string>
+    <string name="cmCustComplaintLabelProductItem">Product Item</string>
+    <string name="cmCustComplaintLabelComplaintDate">Complaint Date</string>
+    <string name="cmCustComplaintLabelComplaintNo">Complaint N°</string>
+    <string name="cmCustComplaintLabelContactName">Contact Name</string>
+    <string name="cmCustComplaintLabelEmail">Email</string>
+    <string name="cmCustComplaintLabelMobileNumber">Mobile Number</string>
+    <string name="cmCustComplaintLabelCompaintTopic">Topic of the Complaint</string>
+    <string name="cmCustComplaintLabelComment">Comment</string>
+    <string name="cmCustComplaintLabelComplaintPhotos">Complaint Photo (3 photos)</string>
+    <string name="cmCustComplaintLabelStatus">Status</string>
+    <string name="cmCustComplaintBtnSend">SEND</string>
+    <string name="cmCustComplaintErrorComplaintDate">Please enter complaint date</string>
+    <string name="cmCustComplaintErrorComplaintItems">Please select complaint product items</string>
+    <string name="cmCustComplaintErrorComplaintNo">Please enter complaint no</string>
+    <string name="cmCustComplaintErrorContactName">Please enter contact name</string>
+    <string name="cmCustComplaintErrorEmail">Please enter email</string>
+    <string name="cmCustComplaintErrorMobileNo">Please enter mobile number</string>
+    <string name="cmCustComplaintErrorComment">Please enter comment</string>
+    <string name="cmCustComplaintErrorComplaintPhoto">Please attach at least one complaint photo</string>
+    <string name="cmCustComplaintLabelSelectItem">Select Items</string>
+    <string name="cmCustComplaintDialogLabelSelectAll">Select All</string>
+    <string name="cmCustComplaintDialogLabelClose">Close</string>
+    <string name="cmCustComplaintDialogLabelDone">Done</string>
+
+    <!--Customer Management Credit Note -->
+    <string name="cmcnLabelCreditNoteNo">Credit Note N°</string>
+    <string name="cmcnLabelInvoiceNo">Invoice N°</string>
+    <string name="cmcnLabelCustomerId">Customer ID</string>
+    <string name="cmcnLabelOpenDate">Open Date</string>
+    <string name="cmcnLabelCredit">Credit</string>
+    <string name="cmcnLabelStatus">Status</string>
+    <string name="cmcnLabelComplaintNo">Complaint N°</string>
+    <string name="cmcnLabelOrdeNo">Order N°</string>
+
+
+    <!--Supplier Management page text-->
+    <string name="supplierPageTitle">SUPPLIER MANAGEMENT</string>
+    <string name="supplierLabelOverdraft">Overdraft</string>
+    <string name="supplierLabelSupplierList">Supplier List</string>
+    <string name="supplierLabelBalance">Balance</string>
+    <string name="supplierLabelProfile">Profile</string>
+    <string name="supplierLabelOrder">Order</string>
+    <string name="supplierLabelSupplierComplaint">Complaint to Supplier</string>
+    <string name="supplierLabelCreditNote">Credit Note</string>
+    <string name="errorSupplierSelect">Please select a supplier first</string>
+
+    <!--Supplier Management Profile -->
+    <string name="spLabelCustomerId">%s (CustomerID Number)</string>
+    <string name="spLabelProfileStatus">Profile Status</string>
+    <string name="spLabelSIREN">SIREN</string>
+    <string name="spLabelEUVAT">EU VAT N°</string>
+    <string name="spLabelIntterferalTax">Interfel Tax</string>
+    <string name="spLabelOverdraft">Overdraft</string>
+    <string name="spLabelCompanyName">Company Name</string>
+    <string name="spLabelAddress">Address</string>
+    <string name="spLabelCountry">Country</string>
+    <string name="spLabelContactFullName">Contact Full Name</string>
+    <string name="spLabelMobile">Mobile</string>
+    <string name="spLabelEmail">Email</string>
+    <string name="spBtnSave">SAVE</string>
+    <string name="spLabelUploadKbisID">Upload Kbis &amp; ID</string>
+    <string name="spErrorOverdraft">Please enter overdraft</string>
+    <string name="spErrorCompanyName">Please enter company name</string>
+    <string name="spErrorAddress">Please enter address</string>
+    <string name="spErrorContactFullName">Please enter contact full name</string>
+    <string name="spErrorMobile">Please enter mobile number</string>
+    <string name="spErrorEmail">Please enter email address</string>
+    <string name="spErrorSiren">Please enter siren no</string>
+    <string name="spErrorSupplierImage">Please attach supplier image</string>
+    <string name="spErrorKbisImage">Please attach KBIS image</string>
+    <string name="spErrorIDImage">Please attach ID image</string>
+
+    <!--Supplier Management Balance -->
+    <string name="sbLabelSupplierID">Supplier ID</string>
+    <string name="sbLabelInvoiceNo">Invoice N°</string>
+    <string name="sbLabelInvoiceDate">Invoice Date</string>
+    <string name="sbLabelDeliveryNoteNo">Delivery Note N°</string>
+    <string name="sbLabelPayMethod">Payment Method</string>
+    <string name="sbLabelDebit">Debit(%s)</string>
+    <string name="sbLabelCredit">Credit(%s)</string>
+    <string name="sbLabelOverdue">Overdraft(%s)</string>
+    <string name="sbLabelTotalAmount">Total Amount(%s)</string>
+    <string name="sbLabelStatus">Status</string>
+
+    <!--Supplier Management Overdraft -->
+    <string name="sovLabelCustomerIDNumber">123456789 (Customer ID Number)</string>
+    <string name="sovLabelAssuranceScoring">Assurance Scoring</string>
+    <string name="sovLabelOverdraftAllow">Overdraft Allow (max)</string>
+    <string name="sovLabelTotalOverdue">Total Overdue</string>
+    <string name="sovLabelProfileStatus">Profile Status</string>
+    <string name="sovLabelPayMethod">Payment Method</string>
+    <string name="sovBtnSace">SAVE</string>
+    <string name="sovErrorOverdraftAllow">Please enter overdraft allow</string>
+    <string name="sovErrorTotalOverdue">Please enter total overdue</string>
+    <string name="sovErrorStatus">Please enter profile status</string>
+
+
+    <!--Supplier Management Order -->
+    <string name="sorLabelSupplierID">Supplier ID</string>
+    <string name="sorLabelOrderNo">Order N°</string>
+    <string name="sorLabelOrderDate">Order Date</string>
+    <string name="sorLabelDeliveryNoteNo">Delivery Note N°</string>
+    <string name="sorLabelStatus1">Status</string>
+    <string name="sorLabelDelivery">Delivery</string>
+    <string name="sorLabelInvoice">Invoice</string>
+    <string name="sorLabelDueDate">Due Date</string>
+    <string name="sorLabelStatus2">Status</string>
+    <string name="sorLabelOverdue">Overdraft(%s)</string>
+
+
+    <!--Supplier Management Complaint -->
+    <string name="scLabelSupplierID">Supplier ID</string>
+    <string name="scLabelComplaintNo">Complaint N°</string>
+    <string name="scLabelDate">Date</string>
+    <string name="scLabelOrderNo">Order N°</string>
+    <string name="scLabelDeliveryNoteNo">Supplier Delivery Note N°</string>
+    <string name="scLabelStatus">Status</string>
+
+    <!--Supplier Management Credit Note -->
+    <string name="scnLabelCreditNoteNo">Credit Note N°</string>
+    <string name="scnLabelSupplierID">Supplier ID</string>
+    <string name="scnLabelComplaintNo">Complaint N°</string>
+    <string name="scnLabelCreditNoteDate">Credit Note Date</string>
+    <string name="scnLabelOrderNo">Order N°</string>
+    <string name="scnLabelSupplierInvoiceNo">Supplier Invoice N°</string>
+    <string name="scnLabelStatus">Status</string>
+    <string name="scnLabelTotalAmount">Total Amount(%s)</string>
+
+    <!--Preparation For Order page Text-->
+    <string name="opPageTitle">ORDER FOR PREPARATION</string>
+    <string name="opTabCustomerList">Customer List</string>
+    <string name="opTabOrderPending">Order Pending</string>
+    <string name="opErrorNoOrderItems">The order has no items</string>
+
+    <!--Perparation Order Pending Order-->
+    <string name="opPendOrderOrderNo">Order N°</string>
+    <string name="opPendOrderOrderDate">Order Date</string>
+    <string name="opPendOrderTime">Time</string>
+    <string name="opPendOrderStatus">Status</string>
+
+
+    <!--Preparation Order Right Tab Text-->
+    <string name="opPoLotNo">Lot N°</string>
+    <string name="opPoProduct">Product</string>
+    <string name="opPoVariety">Variety</string>
+    <string name="opPoCatgories">Categories</string>
+    <string name="opPoCalibre">Calibre</string>
+    <string name="opPoOrigin">Origin</string>
+    <string name="opPoRequestedQuantity1">Requested Quantity</string>
+    <string name="opPoPackaging">Packaging</string>
+    <string name="opPoTotal">Total(%s)</string>
+
+    <!--Cashier Desk Page text-->
+    <string name="cashierPageTitle">CASHIER DESK</string>
+    <string name="cashierLabelStatus">Status</string>
+    <string name="cashierLabelBalance">Balance</string>
+    <string name="cashierLabelOverdraft">Overdraft</string>
+    <string name="cashierLabelSiren">SIREN: %s</string>
+    <string name="cashierLabelOrderTab">Order</string>
+    <string name="cashierLabelCustomerTab">Customer</string>
+    <string name="cashierLabelPaymentTab">Payment</string>
+    <string name="cashierLabelBalanceTab">Balance</string>
+    <string name="cashierLabelCreditNoteTab">Credit Note</string>
+    <string name="errorSelectCashierOrderFirst">Please select a order first</string>
+
+    <!--Cashier Desk Order Tab -->
+    <string name="cdoLabelOrderNo">Order N°</string>
+    <string name="cdoLabelOrderDate">Order Date</string>
+    <string name="cdoLabelStatus">Status</string>
+
+    <!--Cashier Desk Customer Tab -->
+    <string name="cdcLabelOrderNo">Order N°</string>
+    <string name="cdcLabelOrderDate">Order Date</string>
+    <string name="cdcLabelOrderStatus">Status</string>
+    <string name="cdcLabelDueDate">Due Date</string>
+
+    <!--Cashier Desk Balance Tab -->
+    <string name="cdbLabelCustomerId">CustomerID</string>
+    <string name="cdbLabelInvoiceNo">Invoice N°</string>
+    <string name="cdbLabelInvoiceDate">Invoice Date</string>
+    <string name="cdbLabelPaymentMethod">Payment Method</string>
+    <string name="cdbLabelDebit">Debit(%s)</string>
+    <string name="cdbLabelCredit">Credit(%s)</string>
+    <string name="cdbLabelStatus">Status</string>
+    <string name="cdbLabelOverdue">Overdraft(%s)</string>
+    <string name="cdbLabelOrderNo">Order N°</string>
+
+    <!--Cashier Desk Credit Note Tab -->
+    <string name="cdcnLabelCustomerID">%s (CustomerID Number)</string>
+    <string name="cdcnLabelInvoiceNo">Invoice N°</string>
+    <string name="cdcnLabelOrderNo">Order N°</string>
+    <string name="cdcnLabelCreditNoteOpen">Credit Note Open</string>
+    <string name="cdcnLabelComplaintNo">Complaint N°</string>
+    <string name="cdcnLabelCreditNoteNo">Credit Note N°</string>
+    <string name="cdcnLabelAmount">Amount</string>
+    <string name="cdcnLabelComment">Comment (255 max)</string>
+    <string name="cdcnLabelStatus">Status</string>
+    <string name="cdcnBtnSend">SEND</string>
+    <string name="cdcnErrorOrderNo">Please enter order no</string>
+    <string name="cdcnErrorCreditNoteOpen">Please enter credit note open</string>
+    <string name="cdcnErrorCreditNoteNo">Please enter credit note no</string>
+    <string name="cdcnErrorAmount">Please enter amount</string>
+    <string name="cdcnErrorComment">Please enter comment</string>
+    <string name="cdcnErrorNoComplaint">The order has no complaint</string>
+
+    <!--Cashier Desk Payment Tab -->
+    <string name="cdpLabelCashPay">Cash Payment</string>
+    <string name="cdpLabelPaymentDate">Payment Date</string>
+    <string name="cdpLabelAtDesk">Payment cash at the desk</string>
+    <string name="cdpLabelCreditCard">Credit Card Payment</string>
+    <string name="cdpLabelByCreditCard">Payment by credit card</string>
+    <string name="cdpLabelChequePay">Cheque Payment</string>
+    <string name="cdpLabelByChequePay">Payment by cheque</string>
+    <string name="cdpLabelOnlinePay">Online Payment</string>
+    <string name="cdpLabelVLCWSPPay">Payment happen on VLCWSP</string>
+    <string name="cdpLabelSEPA">SEPA</string>
+    <string name="cdpLabelSEPAPay">Payment with SEPA</string>
+    <string name="cdpLabelToken">Token</string>
+    <string name="cdpLabelTokenNo">Token N° 0000012345</string>
+    <!--Dialog Labels-->
+    <string name="cdpLabelDetails">Order Details </string>
+    <string name="cdpLabelTotalHT">Total (HT)</string>
+    <string name="cdpLabelTotalTax">Total Tax</string>
+    <string name="cdpLabelDelivery">Delivery</string>
+    <string name="cdpLabelTotalTAV">Total (TAV)</string>
+    <string name="cdpLabelCreditNote">Credit Note</string>
+    <string name="cdpLabelTotalTTC">Total (TTC)</string>
+    <string name="cdpBtnPay">PAY</string>
+    <!--Dialog Overdraft Labels-->
+    <string name="cdpoLabelOverdraft">Overdraft</string>
+    <string name="cdppBtnProceed">Proceed</string>
+
+    <!--Accounting Page Text-->
+    <string name="accountingPageTitle">ACCOUNTING</string>
+    <string name="accountingTabCustomerList">Customer List</string>
+    <string name="accountingTabSupplierList">Supplier List</string>
+    <string name="accountingTabInventory">Inventory</string>
+    <string name="accountingTabCorporate">Corporate</string>
+    <string name="accountingTabBalance">Balance</string>
+    <string name="accountingTabFileTransfer">File Transfer</string>
+    <string name="accountingTabCreditNote">Credit Note</string>
+    <string name="errorAccountingSelectCustomerID">Please select customer</string>
+    <string name="errorAccountingSelectSupplierID">Please select supplier</string>
+    <string name="errorAccountingSelectVerityID">Please select variety</string>
+
+    <!--Accounting Balance Tab (Right Tab Customer List Selected)-->
+    <string name="acbLabelCustomerId">Customer ID</string>
+    <string name="acbLabelInvoiceNo">Invoice N°</string>
+    <string name="acbLabelInvoiceDate">Invoice Date</string>
+    <string name="acbLabelPaymentMethod">Payment Method</string>
+    <string name="acbLabelDebit">Debit</string>
+    <string name="acbLabelCredit">Credit</string>
+    <string name="acbLabelStatus">Status</string>
+    <string name="acbLabelOverdue">Overdue</string>
+    <string name="acbLabelOrderNo">Order N°</string>
+    <string name="acbLabelCreditNote">Credit Note</string>
+
+    <!--Accounting Balance Tab (Right Tab Supplier List Selected)-->
+    <string name="asbLabelSupplierID">Supplier ID</string>
+    <string name="asbLabelInvoiceNo">Invoice N°</string>
+    <string name="asbLabelInvoiceDate">Invoice Date</string>
+    <string name="asbLabelDeliveryNoteNo">Delivery Note N°</string>
+    <string name="asbLabelPayMethod">Payment Method</string>
+    <string name="asbLabelDebit">Debit</string>
+    <string name="asbLabelCredit">Credit</string>
+    <string name="asbLabelStatus">Status</string>
+    <string name="asbLabelOverdue">Overdue</string>
+    <string name="asbLabelTotalAmount">Total Amount</string>
+
+    <!--Accounting Balance Tab (Right Tab Inventory Selected)-->
+    <string name="aibLabelLotNo">Lot N°</string>
+    <string name="aibLabelCategory">Category</string>
+    <string name="aibLabelCalibre">Calibre</string>
+    <string name="aibLabelOrigin">Origin</string>
+    <string name="aibLabelSupplier1">Supplier</string>
+    <string name="aibLabelKgFromIncome">"KG" -> from income field</string>
+    <string name="aibLabelBoxFromIncome">"BOX" -> from income field</string>
+    <string name="aibLabelAvailableQuantity">Available Quantity</string>
+    <string name="aibLabelBuyingCost">Buying Cost (%s)</string>
+    <string name="aibLabelSupplier2">Supplier</string>
+
+    <!--Accounting File Transfer Tab -->
+    <string name="aftLabelThirdPartyDownload">Third Party Download or Upload</string>
+    <string name="aftLabelOrderTransfer">Order Transfer</string>
+    <string name="aftLabelCustomerListTransfer">Customer List Transfer</string>
+    <string name="aftLabelInventoryTransfer">Inventory Transfer</string>
+    <string name="aftLabelProductListTransfer">Product List Transfer</string>
+    <string name="aftLabelSupplierListTransfer">Supplier List Transfer</string>
+    <string name="aftLabelInvoiceListTransfer">Invoice List Transfer</string>
+    <string name="aftBtnDownload">DOWNLOAD</string>
+    <string name="aftBtnSave">SAVE</string>
+    <string name="aftBtnTransfer">TRANSFER</string>
+
+    <!--Accounting Credit Note Tab -->
+    <string name="acnLabelSupplierIDNumber">%s (Supplier ID Number)</string>
+    <string name="acnLabelSupplierInvoiceNo">Supplier Invoice N°</string>
+    <string name="acnLabelSupplierDeliveryNoteNo">Supplier Delivery Note N°</string>
+    <string name="acnLabelCreditNoteClosed">Credit Note Closed</string>
+    <string name="acnLabelComplaintNoInternal">Complaint N° (internal record number)</string>
+    <string name="acnLabelInvoiceRecordId">Invoice Record ID (internal record ID)</string>
+    <string name="acnLabelEmail">Email</string>
+    <string name="acnLabelSupplierCreditNoteNo">Supplier Credit Note N°</string>
+    <string name="acnLabelAmount">Amount</string>
+    <string name="acnLabelComment">Comment (255 max)</string>
+    <string name="acnLabelStatus">Status</string>
+    <string name="acnBtnSend">SEND</string>
+    <string name="acnErrorCreditNoteClosed">Please enter credit note closed</string>
+    <string name="acnErrorComplaintNo">Please enter complaint no</string>
+    <string name="acnErrorSupplierCreditNoteNo">Please enter supplier credit note no</string>
+    <string name="acnErrorEmail">Please enter email address</string>
+    <string name="acnErrorAmount">Please enter amount</string>
+    <string name="acnErrorComment">Please enter comment</string>
+
+    <!--Dashboard Page Text -->
+    <string name="dashboardPageTitle">DASHBOARD</string>
+    <string name="dashboardTabCustomer">Customer</string>
+    <string name="dashboardTabSupplier">Supplier</string>
+    <string name="dashboardTabInvoice">Invoice</string>
+    <string name="dashboardTabOrder">Order</string>
+    <string name="dashboardTabInventory">Inventory</string>
+    <string name="dashboardTabBalance">Balance</string>
+    <string name="dashboardLabelTurnOverVsOverdue">Turnover Versus Overdue</string>
+    <string name="dashboardLabelTurnOverVsInterfelTaxCollected">Turnover Versus Interfel Tax Collected</string>
+    <string name="dashboardLabelTurnOverVsSupplierTotalInvoicing">Turnover Versus Supplier Total Invoicing</string>
+    <string name="dashboardLabelTurnOverVsProductLost">Turnover Versus Product Lost</string>
+    <string name="dashboardLabelProductVsTrash">Product Versus Trash in (%s)</string>
+    <string name="dashboardLabelCreditNoteVsProductLost">Credit Note Versus Product Lost (%s)</string>
+    <string name="dashboardLabelTotal">Total</string>
+
+    <!--Sales User Page Text-->
+    <string name="salesPageTitle">SALES MANAGEMENT</string>
+    <string name="salesLabelStatus">Status</string>
+    <string name="salesLabelBalance">Balance</string>
+    <string name="salesLabelOverdraft">Overdraft</string>
+    <string name="salesLabelSiren">SIREN: %s</string>
+    <string name="salesLabelNoTVA">N° TAV: %s</string>
+    <string name="salesLabelFruits">Fruits</string>
+    <string name="salesLabelVegs">Vegs</string>
+    <string name="salesLabelOthers">Others</string>
+
+    <!--Sales Tab Orders -->
+    <string name="salesOrderLotNo">Lot N°</string>
+    <string name="salesOrderProduct">Product</string>
+    <string name="salesOrderVariety">Variety</string>
+    <string name="salesOrderCatgories">Categories</string>
+    <string name="salesOrderCalibre">Calibre</string>
+    <string name="salesOrderOrigin">Origin</string>
+    <string name="salesOrderPrice">Price(%s)</string>
+    <string name="salesOrderTare">Tare</string>
+    <string name="salesOrderQuantity">Quantity</string>
+    <string name="salesOrderPackaging">Packaging</string>
+    <string name="salesOrderVAT">VAT(%s)</string>
+    <string name="salesOrderTotal">Total(%s)</string>
+    <string name="salesOrderDeliveryOptions">Delivery Option</string>
+    <string name="salesOrderPickUp">Pick Up</string>
+    <string name="salesOrderFastDelivery">Fast Delivery</string>
+    <string name="salesOrderBtnDelete">Delete</string>
+    <string name="salesOrderBtnPrint">Print</string>
+    <string name="salesOrderBtnAdd">Add</string>
+    <string name="salesOrderBtnSend">Send</string>
+    <string name="salesOrderBtnInvoicing">Invoicing</string>
+    <string name="salesOrderBtnPreparation">Preparation</string>
+    <string name="salesOrderTotalHT">Total (HT)</string>
+    <string name="salesOrderTotalTax">Total Tax</string>
+    <string name="salesOrderDelivery">Delivery</string>
+    <string name="salesOrderTotalTAV">Total (TAV)</string>
+    <string name="salesOrderCreditNote">Credit Note</string>
+    <string name="salesOrderTotalTTC">Total (TTC)</string>
+    <string name="title_activity_address_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="errorPleaseAddCustomerFirst">Please add a customer first</string>
+    <string name="errorSalesNoQuantity">This seller doesn\'t have any stock</string>
+    <string name="errorPleaseSelectItemToDelete">Please select items to delete</string>
+    <string name="errorSelectDeliveryType">Please select delivery type</string>
+    <string name="errorSelectDeliveryAddress">Please add delivery address</string>
+
+
+    <!--Address Map Activity-->
+    <string name="addressMapBtnSave">DONE</string>
+
+    <!--Human Resources Page Text-->
+    <string name="hrPageTitle">HUMAN RESOURCES</string>
+    <string name="hrTabUser">Users</string>
+    <string name="hrTabProfile">Profile</string>
+    <string name="hrTabSigPanel">Signature Panel</string>
+    <string name="hrTabLeave">Leave Management</string>
+    <string name="hrTabExpense">Expense Management</string>
+    <string name="hrTabPaySlip">Pay Slip Management</string>
+    <string name="hrErrorSelectUser">Please select a user first</string>
+
+    <!--HR Add Leave Screen-->
+    <string name="hrLeaveLabelUser">User</string>
+    <string name="hrLeaveLabelType">Type</string>
+    <string name="hrLeaveLabelStartDate">Start date (First day of vacation)</string>
+    <string name="hrLeaveLabelEndDate">End date (Last day of vacation)</string>
+    <string name="hrLeaveLabelApproved">Will be approved by</string>
+    <string name="hrLeaveLabelNote">Note</string>
+    <string name="hrLeaveErrorStartDate">Please select start date of leave</string>
+    <string name="hrLeaveErrorEndDate">Please select end date of leave</string>
+    <string name="hrLeaveErrorNote">Please enter note</string>
+    <string name="hrLeaveCasual">Casual</string>
+    <string name="hrLeaveSick">Sick</string>
+    <string name="hrLeaveMorning">Morning</string>
+    <string name="hrLeaveAfternoon">Afternoon</string>
+    <string name="hrLeaveEvening">Evening</string>
+
+    <!--HR Leave Management Screen-->
+    <string name="hrLeavesLabelRef">Ref</string>
+    <string name="hrLeavesLabelDate">Creation date</string>
+    <string name="hrLeavesLabelEmployee">Employee</string>
+    <string name="hrLeavesLabelApprobator">Approbator</string>
+    <string name="hrLeavesLabelType">Type</string>
+    <string name="hrLeavesLabelDays">Days</string>
+    <string name="hrLeavesLabelStartDate">Start date</string>
+    <string name="hrLeavesLabelEndDate">End date</string>
+    <string name="hrLeavesLabelStatus">Status</string>
+    <string name="hrLeavesBtnSave">SAVE</string>
+    <string name="hrLeavesBtnDelete">DELETE</string>
+
+    <!--Hr Leave Detail Screen-->
+    <string name="hrLDLabelUser">User</string>
+    <string name="hrLDLabelType">Type</string>
+    <string name="hrLDLabelStartDate">Start date (First day of vacation)</string>
+    <string name="hrLDLabelEndDate">End date (Last day of vacation)</string>
+    <string name="hrLDLabelNoOfDays">Number of days vacation consumed</string>
+    <string name="hrLDLabelDescription">Description</string>
+    <string name="hrLDLabelRequestedBy">Requested By</string>
+    <string name="hrLDLabelApprovedBy">Will be approved by</string>
+    <string name="hrLDLabelCreationDate">Creation date</string>
+    <string name="hrLDBtnSave">SAVE</string>
+    <string name="hrLDBtnDelete">DELETE</string>
+    <string name="hrLDBtnAccept">ACCEPT</string>
+    <string name="hrLDBtnReject">REJECT</string>
+
+
+    <!--HR Signature Screen-->
+    <string name="hrSigLabelSignature">Signature</string>
+    <string name="hrSigLabelDate">Date</string>
+    <string name="hrSigLabelOTP">OTP</string>
+    <string name="hrSigBtnSave">SAVE</string>
+    <string name="hrSigBtnSendOTP">SEND OTP</string>
+    <string name="hrSigErrorSignature">Please enter signature</string>
+    <string name="hrSigErrorDate">Please enter date</string>
+    <string name="hrSigErrorOTP">Please enter otp</string>
+
+    <!--HR Expense Management Screen-->
+    <string name="hrExpenseLabelStartDate">Date</string>
+    <string name="hrExpenseLabelAmount">Amount</string>
+    <string name="hrExpenseLabelResponsible">User responsible for approval</string>
+    <string name="hrExpenseLabelVat">VAT</string>
+    <string name="hrExpenseLabelNote">Note</string>
+    <string name="hrExpenseErrorStartDate">Please enter date</string>
+    <string name="hrExpenseErrorAmount">Please enter amount</string>
+    <string name="hrExpenseErrorNote">Please enter note</string>
+
+    <!--HR Expense List Screen-->
+    <string name="hrELLabelEmployeeId">%s (Employee ID)</string>
+    <string name="hrELLabelRef">Ref</string>
+    <string name="hrELLabelUser">User</string>
+    <string name="hrELLabelStartDare">Start date</string>
+    <string name="hrELLabelEndDate">End date</string>
+    <string name="hrELLabelValidationDate">Validation date</string>
+    <string name="hrELLabelApprovingDate">Approving date</string>
+    <string name="hrELLabelAmount">Amount(%s)</string>
+    <string name="hrELLabelStatus">Status</string>
+
+    <!--HR Expense Detail Screen-->
+    <string name="hrEDLabelUser">User</string>
+    <string name="hrEDLabelAmount">Amount</string>
+    <string name="hrEDLabelStartDate">Start date (First day of vacation)</string>
+    <string name="hrEDLabelDescription">Description</string>
+    <string name="hrEDLabelRequestedBy">Requested By</string>
+    <string name="hrEDLabelApprovedBy">Will be approved by</string>
+    <string name="hrEDLabelCreationDate">Creation date</string>
+    <string name="hrEDBtnSave">SAVE</string>
+    <string name="hrEDBtnDelete">DELETE</string>
+    <string name="hrEDBtnAccept">ACCEPT</string>
+    <string name="hrEDBtnReject">REJECT</string>
+
+
+    <!--Financial Management Screen text-->
+    <string name="financialPageTitle">FINANCIAL MODULE (ACCOUNTING/TREASURY)</string>
+    <string name="financialDrawerTitle">FINANCIAL MANAGEMENT</string>
+    <string name="financialTabUser">User</string>
+    <string name="financialTabFinancial">Financial Modules</string>
+    <string name="financialTabThirdParties">Third Parties</string>
+    <string name="financialTabProducts">Products</string>
+    <string name="financialTabCommerce">Commerce</string>
+    <string name="financialTabBillingPayment">Billing | Payment</string>
+    <string name="financialTabBankCash">Bank | Cash</string>
+    <string name="financialTabAccounting">Accounting</string>
+    <string name="financialTabDocuments">Document</string>
+    <string name="financialTabAgenda">Agenda</string>
+
+
+    <!--Financial Third Party Screen text-->
+    <string name="fTPLabelThirdPartName">Third-party Name</string>
+    <string name="fTPLabelAliasName">Alias Name</string>
+    <string name="fTPLabelCustomerCode">Customer Code</string>
+    <string name="fTPLabelCity">City</string>
+    <string name="fTPLabelZipCode">Zip Code</string>
+    <string name="fTPLabelThirdPartyType">Third-party Type</string>
+    <string name="fTPLabelPhone">Phone</string>
+    <string name="fTPLabelStatus">Status</string>
+
+    <!--Financial Bank Cash List -->
+    <string name="nfaListGroupTitleBankCash">Bank | Cash</string>
+    <string name="nfaListChildTitleNewFinancialAccount">New Financial Account</string>
+    <string name="nfaListChildTitleFinancialAccountList">List</string>
+    <string name="nfaListChildTitleListEntries">List Entries</string>
+    <string name="nfaListChildTitleListEntriesCategory">List Entries/Category</string>
+    <string name="nfaListChildTitleInternalTransfer">Internal Transfer</string>
+    <string name="nfaListGroupTitleDirectDebitOrders">Direct Debit Orders</string>
+    <string name="nfaListChildTitleNewDirectDebitOrders">New Direct Debit Orders</string>
+    <string name="nfaListChildTitleDirectDebitOrderLines">Direct Debit Order Lines</string>
+    <string name="nfaListChildTitleRejects">Rejects</string>
+    <string name="nfaListGroupTitleCheckDeposits">Check Deposits</string>
+    <string name="nfaListChildTitleNewDeposits">New Deposits</string>
+    <string name="nfaListChildTitleDepositList">List</string>
+
+    <!--Financial Bank Cask screen-->
+    <string name="nfaLabelNewFinancialAccount">New Financial Account</string>
+    <string name="nfaLabelRef">Ref.</string>
+    <string name="nfaLabelBankOrCash">Bank or Cash Label</string>
+    <string name="nfaLabelAccountType">Account Type</string>
+    <string name="nfaLabelCurrency">Currency</string>
+    <string name="nfaLabelStatus">Status</string>
+    <string name="nfaLabelAccountCountry">Account Country</string>
+    <string name="nfaLabelState">State/Province</string>
+    <string name="nfaLabelWeb">Web</string>
+    <string name="nfaLabelComment">Comment</string>
+    <string name="nfaLabelInitialBalance">Initial Balance</string>
+    <string name="nfaLabelDate">Date</string>
+    <string name="nfaLabelMinAllowedBalance">Minimum Allowed Balance</string>
+    <string name="nfaLabelMaxDesiredBalance">Minimum Desired Balance</string>
+    <string name="nfaLabelBankName">Bank Name</string>
+    <string name="nfaLabelBankCode">Bank Code</string>
+    <string name="nfaLabelAccountNumber">Account Number</string>
+    <string name="nfaLabelIBANAccountNumber">IBAN Account Number</string>
+    <string name="nfaLabelBicSwiftCide">BIC/SWIFT Code</string>
+    <string name="nfaLabelBankAddress">Bank Address</string>
+    <string name="nfaLabelAccountOwnerName">Account Owner Name</string>
+    <string name="nfaLabelAccountOwnerAddress">Account Owner Address</string>
+    <string name="nfaLabelAccountingAccount">Accounting Account</string>
+    <string name="nfaLabelAccountCodeJournal">Accounting Code Journal</string>
+    <string name="nfaBtnCreateAccount">CREATE ACCOUNT</string>
+    <string name="nfaBtnModifyAccount">MODIFY</string>
+    <string name="nfaBtnDeleteAccount">DELETE</string>
+    <string name="nfaErrorRef">Please enter reference no.</string>
+    <string name="nfaErrorBankOrCash">Please enter or cash label</string>
+    <string name="nfaErrorState">Please enter State/Province</string>
+    <string name="nfaErrorWeb">Please enter website</string>
+    <string name="nfaErrorComment">Please enter comment</string>
+    <string name="nfaErrorInitialBalance">Please enter initial balance</string>
+    <string name="nfaErrorDate">Please enter date</string>
+    <string name="nfaErrorMinAllowedBalance">Please enter minimum allowed balance</string>
+    <string name="nfaErrorMaxDesiredBalance">Please enter minimum desired balance</string>
+    <string name="nfaErrorBankName">Please enter bank name</string>
+    <string name="nfaErrorBankCode">Please enter bank code</string>
+    <string name="nfaErrorAccountNumber">Please enter account number</string>
+    <string name="nfaErrorIBANAccountNumber">Please enter IBAN account number</string>
+    <string name="nfaErrorBicSwiftCide">Please enter BIC/SWIFT code</string>
+    <string name="nfaErrorBankAddress">Please enter bank address</string>
+    <string name="nfaErrorAccountOwnerName">Please enter account owner name</string>
+    <string name="nfaErrorAccountOwnerAddress">Please enter account owner address</string>
+    <string name="nfaErrorAccountingAccount">Please enter accounting account</string>
+
+
+    <!--Financial Bank Cash  Financial Account List Screen -->
+    <string name="falPageTitle">Bank Accounts</string>
+    <string name="falLabelBankAccounts">Bank Accounts</string>
+    <string name="falLabelLabel">Label</string>
+    <string name="falLabelType">Type</string>
+    <string name="falLabelNumber">Number</string>
+    <string name="falLabelEntriesToReconsile">Entries to Reconsile</string>
+    <string name="falLabelStatus">Status</string>
+    <string name="falLabelBalance">Balance(%s)</string>
+    <string name="falBtnSearch">SEARCH</string>
+
+    <!--Financial Entries List Screen-->
+    <string name="faeLabelEntries">Entries</string>
+    <string name="faeLabelRef">Ref</string>
+    <string name="faeLabelDescription">Description</string>
+    <string name="faeLabelOperDate">Oper. Date</string>
+    <string name="faeLabelValueDate">Value Date</string>
+    <string name="faeLabelType">Type</string>
+    <string name="faeLabelNumber">Number</string>
+    <string name="faeLabelThirdParty">Third-party</string>
+    <string name="faeLabelBankAccount">Bank-account</string>
+    <string name="faeLabelDebit">Debit(%s)</string>
+    <string name="faeLabelCredit">Credit(%s)</string>
+    <string name="faeLabelBalance">Balance</string>
+    <string name="faeLabelAccountStatement">Account Statement</string>
+
+    <!--Financial Add Entry Screen -->
+    <string name="fadeLabelDateOfPay">Date of Payment</string>
+    <string name="fadeLabelValueDate">Valued Date</string>
+    <string name="fadeLabelLabel">Label</string>
+    <string name="fadeLabelSens">Sens</string>
+    <string name="fadeLabelAmount">Amount</string>
+    <string name="fadeLabelBankAccount">Bank Account</string>
+    <string name="fadeLabelPayType">Payment Type</string>
+    <string name="fadeLabelCheckNumber">Number (Check/Transfer N°)</string>
+    <string name="fadeLabelAccountingAccount">Accounting Account</string>
+    <string name="fadeLabelSubledgerAccount">Subledger Account</string>
+    <string name="fadeBtnSave">SAVE</string>
+
+    <string name="fadeErrorDateOfPay">Please enter date of payment</string>
+    <string name="fadeErrorValueDate">Please enter valued date</string>
+    <string name="fadeErrorLabel">Please enter label</string>
+    <string name="fadeErrorSens">Please enter sens</string>
+    <string name="fadeErrorAmount">Please enter amount</string>
+    <string name="fadeErrorBankAccount">Please enter bank account</string>
+    <string name="fadeErrorPayType">Please enter payment type</string>
+    <string name="fadeErrorCheckNumber">Please enter number (Check/Transfer N°)</string>
+    <string name="fadeErrorAccountingAccount">Please enter accounting account</string>
+    <string name="fadeErrorSubledgerAccount">Please enter subledger account</string>
+
+
+    <!--Financial Internal transfer Screen -->
+    <string name="fitLabelInternalTransfer">Internal Transfer</string>
+    <string name="fitLabelFrom">From</string>
+    <string name="fitLabelTo">To</string>
+    <string name="fitLabelDate">Date</string>
+    <string name="fitLabelDescription">Description</string>
+    <string name="fitLabelAmount">Amount</string>
+    <string name="fitLabelPayType">Payment Type</string>
+    <string name="fitBtnAdd">ADD</string>
+    <string name="fitErrorDate">Please enter date</string>
+    <string name="fitErrorDescription">Please enter description</string>
+    <string name="fitErrorAmount">Please enter amount</string>
+
+    <!--Financial Billing Payment Screen-->
+    <string name="fbpListCustomerInvoice">Customer Invoices</string>
+    <string name="fbpListCustomerNewInvoice">New Invoice</string>
+    <string name="fbpListCustomerInvoiceList">Invoices List</string>
+    <string name="fbpListCustomerTemplateList">List of Templates</string>
+    <string name="fbpListCustomerPayments">Payments</string>
+    <string name="fbpListCustomerReporting">Reporting</string>
+    <string name="fbpListCustomerStatistics">Statistics</string>
+    <string name="fbpListVendorInvoices">Vendor Invoices</string>
+    <string name="fbpListVendorNewInvoice">New Invoice</string>
+    <string name="fbpListVendorInvoiceList">Invoices List</string>
+    <string name="fbpListVendorPayments">Payments</string>
+    <string name="fbpListVendorReporting">Reporting</string>
+    <string name="fbpListVendorStatistics">Statistics</string>
+    <string name="fbpListDonations">Donations</string>
+    <string name="fbpListNewDonation">New Donation</string>
+    <string name="fbpListDonationList">Donation List</string>
+    <string name="fbpListSalaries">Salaries</string>
+    <string name="fbpListNewSalary">New Salary</string>
+    <string name="fbpListSalaryList">List</string>
+    <string name="fbpListSalaryPayments">Payments</string>
+    <string name="fbpListSalaryStatistics">Statistics</string>
+    <string name="fbpListLoan">Loan</string>
+    <string name="fbpListNewLoan">New Loan</string>
+    <string name="fbpListSpeacialExpenses">Tax | Special Expenses</string>
+    <string name="fbpListSocialTax">Social/Fiscal Taxes</string>
+    <string name="fbpListSalesTax">Sales Taxes</string>
+    <string name="fbpListMiscPayments">Miscellaneous Payment</string>
+    <string name="fbpListNewPayments">New Payment</string>
+    <string name="fbpListPaymentsList">List</string>
+
+
+    <!--Billing Customer New Invoice Screen -->
+    <string name="bniLabelRef">Ref</string>
+    <string name="bniLabelCustomer">Customer</string>
+    <string name="bniLabelType">Type</string>
+    <string name="bniLabelStandardInvoice">Standard Invoice</string>
+
+
+    <!--Billing Customer Invoice Listing screen-->
+    <string name="bcilLabelRef">Ref</string>
+    <string name="bcilLabelOrderNo">Order No</string>
+    <string name="bcilLabelDate">Date</string>
+    <string name="bcilLabelTime">Time</string>
+    <string name="bcilLabelPaymentMethod">Payment Method</string>
+    <string name="bcilLabelDebit">Debit(%s)</string>
+    <string name="bcilLabelCredit">Credit(%s)</string>
+    <string name="bcilLabelStatus">Status</string>
+    <string name="bcilLabelOverdue">Overdraft(%s)</string>
+    <string name="bcilLabelDeliveryType">Delivery Type</string>
+    <string name="bcilLabelThirdParty">Customer Company Name</string>
+    <string name="bcilLabelTotalPayableAmount">Total Payable Amount(%s)</string>
+
+    <!--Billing Vendor Invoice Listing screen-->
+    <string name="bvilLabelRef">Ref</string>
+    <string name="bvilLabelInvoiceNo">Invoice No</string>
+    <string name="bvilLabelDate">Date</string>
+    <string name="bvilLabelSupplierNote">Time</string>
+    <string name="bvilLabelPaymentMethod">Payment Method</string>
+    <string name="bvilLabelDebit">Debit(%s)</string>
+    <string name="bvilLabelCredit">Credit(%s)</string>
+    <string name="bvilLabelStatus">Status</string>
+    <string name="bvilLabelOverdue">Overdraft(%s)</string>
+    <string name="bvilLabelThirdParty">Supplier Company Name</string>
+    <string name="bvilLabelTotalPayableAmount">Total Payable Amount(%s)</string>
+
+    <!--Billing Customer Payment Screen -->
+    <string name="bcpLabelRef">Ref</string>
+    <string name="bcpLabelOrderNo">Order No</string>
+    <string name="bcpLabelDate">Date</string>
+    <string name="bcpLabelCustomerName">Customer Company Name</string>
+    <string name="bcpLabelPayMethod">Payment Method</string>
+    <string name="bcpLabelPayAmount">Paid Amount(%s)</string>
+
+
+    <!--billing vendor Payment scrren-->
+    <string name="bvpLabelRef">Ref</string>
+    <string name="bvpLabelInvoiceNo">Invoice No</string>
+    <string name="bvpLabelSupplierCompanyName">Supplier Company Name</string>
+    <string name="bvpLabelDate">Date</string>
+    <string name="bvpLabelPayMethod">Payment Method</string>
+    <string name="bvpLabelPayAmount">Total Payable Amount(%s)</string>
+
+    <!--Billing Statistics Screen-->
+    <string name="bstatStatistics">Statistics</string>
+    <string name="bstatLabelYear">Year</string>
+    <string name="bstatLabelNoOfInvoices">No of Invoices</string>
+    <string name="bstatLabelTotalAmount">Total Amount(%s)</string>
+    <string name="bstatLabelAvgAmount">Average Amount(%s)</string>
+    <string name="bstatLabelNoOfInvoicesPerMonth">No. of Invoices per month</string>
+    <string name="bstatLabelInvoiceAmountMonth">Amount of Invoices by month (net of tax)(%s)</string>
+
+
+    <!--Billing Reporting-->
+    <string name="breportLabelReporting">Reporting</string>
+    <string name="breportLabelSelectMonth">Select Month</string>
+    <string name="breportLabelSelectYear">Select Year</string>
+    <string name="breportBtnDownload">Download</string>
+
+    <!--Financial Accounting Screen-->
+    <string name="faListFinancialAccountingSetup">Setup</string>
+    <string name="faListAccountingSetupGeneral">General</string>
+    <string name="faListAccountingJournals">Accounting Journals</string>
+    <string name="faListChartAccountingModels">Chart of Accounting Models</string>
+    <string name="faListAccountsChart">Chart of Accounts</string>
+    <string name="faListPersonalizedGroups">Personalized Groups</string>
+    <string name="faListDefaultAccounts">Default Accounts</string>
+    <string name="faListBankAccounts">Bank Accounts</string>
+    <string name="faListVATAccounts">VAT Accounts</string>
+    <string name="faListTAXAccounts">TAX Accounts</string>
+    <string name="faListExpenseReportAccounts">Expense Report Accounts</string>
+    <string name="faListProductAccounts">Product Accounts</string>
+    <string name="faListExportOptions">Export Options</string>
+    <string name="faListTransferAccounting">Transfer in Accounting</string>
+    <string name="faListCustomerInvoiceBinding">Customer Invoice Binding</string>
+    <string name="faListCustomerInvoiceLinesBinding">"      Lines to Bind"</string>
+    <string name="faListCustomerInvoiceLinesBound">"      Lines Bound"</string>
+    <string name="faListExpenseReportBinding">Expense Report Binding</string>
+    <string name="faListExpenseReportLinesToBind">"      Lines to Bind"</string>
+    <string name="faListExpenseReportLinesToBound">"      Lines Bound"</string>
+    <string name="faListVendorInvoiceBinding">Vendor Invoice Binding</string>
+    <string name="faListVendorInvoiceLinesToBind">"      Lines to Bind"</string>
+    <string name="faListVendorInvoiceLinesToBound">"      Lines Bound"</string>
+    <string name="faListRegistrationAccounting">"Registration in Accounting"</string>
+    <string name="faListFinanceJournal">"      Finance Journal"</string>
+    <string name="faListExpenseReportJournal">"      Expense Report Journal"</string>
+    <string name="faListSellJournal">"      Sell Journal"</string>
+    <string name="faListPurchaseJournal">"      Purchase Journal"</string>
+    <string name="faListFinancialAccounting">Accounting</string>
+    <string name="faListAccountingLedger">Ledger</string>
+    <string name="faListFinancialAccountingAccountBalance">Account Balance</string>
+    <string name="faListExportAccountingDocuments">Export Accounting Documents</string>
+    <string name="faListFinancialReporting">Reporting</string>
+    <string name="faListFinancialIncomeExpense">"      Income/Expense"</string>
+    <string name="faListIncomeExpensePredefinedGroups">"              By Predefined Groups"</string>
+    <string name="faListIncomeExpensePersonalizedGroups">"              By Personalized Groups"</string>
+    <string name="faListTurnOverInvoiced">"      Turn Over Invoiced"</string>
+    <string name="faListInvoicedThirdParties">"              By Third Parties"</string>
+    <string name="faListInvoicedUser">"              By User"</string>
+    <string name="faListInvoicedProductServices">"              By Product and Services"</string>
+    <string name="faListInvoicedSaleTaxRate">"              By Sale Tax Rate"</string>
+    <string name="faListTurnOverCollected">"     Turn Over Collected"</string>
+    <string name="faListCollectedThirdParties">"              By Third Parties"</string>
+    <string name="faListCollectedUser">"              By User"</string>
+    <string name="faListPurchaseTurnOverInvoiced">"      Purchase Turn Over Invoiced"</string>
+    <string name="faListPurchaseInvoicedThirdParties">"              By Third Parties"</string>
+    <string name="faListPurchaseInvoicedProductService">"              By Product and Services"</string>
+    <string name="faListPurchaseTurnOverCollected">"     Purchase Turn Over Collected"</string>
+    <string name="faListPurchaseCollectedThirdParties">"              By Third Parties"</string>
+
+
+    <!--Financial Accounting Journal Screen-->
+    <string name="fajPageTitle">Accounting Journals</string>
+    <string name="fajLabelCode">Code</string>
+    <string name="fajLabelLabel">Label</string>
+    <string name="fajLabelNatureOfJournal">Nature of Journal</string>
+    <string name="fajLabelStatus">Status</string>
+    <string name="fajBtnAdd">ADD</string>
+    <string name="fajBtnModify">MODIFY</string>
+    <string name="fajErrorCode">Please enter code</string>
+    <string name="fajErrorLabel">Please enter label</string>
+
+
+    <!--Financial Accounting Chart of Accounting Models-->
+    <string name="facamPageTitle">Chart of Accounting Models</string>
+    <string name="facamLabelChatAccountModels">Chart of Account Models</string>
+    <string name="facamLabelLabel">Label</string>
+    <string name="facamLabelCountry">Country</string>
+    <string name="facamLabelStatus">Status</string>
+    <string name="facamErrorChatAccountModels">Please enter chart of account model</string>
+    <string name="facamErrorLabel">Please enter label</string>
+    <string name="facamBtnAdd">ADD</string>
+    <string name="facamBtnModify">MODIFY</string>
+
+    <!--Financial Accounting Chart Accounts-->
+    <string name="facaPageTitle">Chart of Accounts</string>
+    <string name="facaLabelAccountNumber">Account Number</string>
+    <string name="facaLabelLabel">Label</string>
+    <string name="facaLabelShortLabel">Short Label</string>
+    <string name="facaLabelParentAccount">Parent Account</string>
+    <string name="facaLabelPersonalizedGroups">Personalized Groups</string>
+    <string name="facaLabelGroupOfAccounts">Group of Account</string>
+    <string name="facaLabelActivated">Activated</string>
+    <string name="facaLabelChartAccountSearch">Select active chart of accounts :</string>
+    <string name="facaErrorAccountNumber">Please enter account number</string>
+    <string name="facaErrorLabel">Please enter label</string>
+    <string name="facaErrorShortLabel">Please enter short label</string>
+    <string name="facaErrorGroupOfAccounts">Please enter group of account</string>
+    <string name="facaBtnADD">ADD</string>
+    <string name="facaBtnSearch">SEARCH</string>
+    <string name="facaBtnModify">MODIFY</string>
+    <string name="facaBtnDelete">DELETE</string>
+
+    <!--Financial Accounting Personalized Group Screen-->
+    <string name="fapgPageTitle">Personalized Groups</string>
+    <string name="fapgLabelCode">Code</string>
+    <string name="fapgLabelLabel">Label</string>
+    <string name="fapgLabelComment">Comment</string>
+    <string name="fapgLabelCalculated">Calculated</string>
+    <string name="fapgLabelFormula">Formula</string>
+    <string name="fapgLabelPosition">Position</string>
+    <string name="fapgLabelCountry">Country</string>
+    <string name="fapgLabelStatus">Status</string>
+    <string name="fapgLabelAccount">Account</string>
+    <string name="fapgErrorCode">Please enter code</string>
+    <string name="fapgErrorLabel">Please enter label</string>
+    <string name="fapgErrorComment">Please enter comment</string>
+    <string name="fapgErrorCalculated">Please enter calculated</string>
+    <string name="fapgErrorFormula">Please enter formula</string>
+    <string name="fapgErrorPosition">Please enter position</string>
+    <string name="fapgBtnAdd">ADD</string>
+    <string name="fapgBtnModify">MODIFY</string>
+
+    <!--Financial Accounting Default Accounts-->
+    <string name="fadaPageTitle">Default Accounts</string>
+    <string name="fadaLabelThirdPartyUsers">Third-parties | Users</string>
+    <string name="fadaLabelProduct">Product</string>
+    <string name="fadaLabelService">Service</string>
+    <string name="fadaLabelOther">Other</string>
+    <string name="fadaLabel1">Accounting account used for customer third parties</string>
+    <string name="fadaLabel2">Accounting account used for vendor third parties</string>
+    <string name="fadaLabel3">Accounting account used for user third parties</string>
+    <string name="fadaLabel4">Accounting account by default for the sold products (used if not defined in the product sheet)</string>
+    <string name="fadaLabel5">Accounting account by default for the products sold and exported out of EEC (used if not defined in the product sheet)</string>
+    <string name="fadaLabel6">Accounting account by default for the bought products (used if not defined in the product sheet)</string>
+    <string name="fadaLabel7">Accounting account by default for the bought products and imported out of EEC (used if not defined in the product sheet)</string>
+    <string name="fadaLabel8">Accounting account by default for the sold services (used if not defined in the service sheet)</string>
+    <string name="fadaLabel9">Accounting account by default for the services sold and exported out of EEC (used if not defined in the service sheet)</string>
+    <string name="fadaLabel10">Accounting account by default for the bought services (used if not defined in the service sheet)</string>
+    <string name="fadaLabel11">Accounting account by default for the bought services and imported out of EEC (used if not defined in the service sheet)</string>
+    <string name="fadaLabel12">Accounting account by default for VAT on purchases (used if not defined on VAT dictionary setup)</string>
+    <string name="fadaLabel13">Accounting account by default for VAT on sales (used if not defined on VAT dictionary setup)</string>
+    <string name="fadaLabel14">Accounting account by default for paying VAT</string>
+    <string name="fadaLabel15">Accounting account of wait</string>
+    <string name="fadaLabel16">Accounting account of transitional bank transfer</string>
+    <string name="fadaLabel17">Accounting account to register donations</string>
+    <string name="fadaLabel18">Accounting account capital by default</string>
+    <string name="fadaLabel19">Accounting account interest by default</string>
+    <string name="fadaLabel20">Accounting account insurance by default</string>
+    <string name="fadaBtnModify">MODIFY</string>
+
+    <!--Financial Accounting VAT Accounts screen-->
+    <string name="favaPageTitle">VAT Accounts</string>
+    <string name="favaLabelCountry">Country</string>
+    <string name="favaLabelCode">Code</string>
+    <string name="favaLabelRate">Rate</string>
+    <string name="favaLabelIncludeTax2">Include tax 2</string>
+    <string name="favaLabelRate2">Rate 2</string>
+    <string name="favaLabelIncludeTax3">Include tax 3</string>
+    <string name="favaLabelRate3">Rate 3</string>
+    <string name="favaLabelNPR">NPR</string>
+    <string name="favaLabelSaleAccountCode">Sale Account Code</string>
+    <string name="favaLabelPurchaseAccountCode">Purchase Account Code</string>
+    <string name="favaLabelNote">Note</string>
+    <string name="favaLabelStatus">Status</string>
+    <string name="favaBtnAdd">ADD</string>
+    <string name="favaBtnModify">MODIFY</string>
+    <string name="favaErrorCode">Please enter code</string>
+    <string name="favaErrorRate">Please enter rate</string>
+    <string name="favaErrorRate2">Please enter rate 2</string>
+    <string name="favaErrorRate3">Please enter rate 3</string>
+    <string name="favaErrorNote">Please enter note</string>
+
+    <!--Financial Accounting TAX Accounts screen-->
+    <string name="fataPageTitle">TAX Accounts</string>
+    <string name="fataLabelCode">Code</string>
+    <string name="fataLabelLabel">Label</string>
+    <string name="fataLabelCountry">Country</string>
+    <string name="fataLabelAccountingCode">Accounting Code</string>
+    <string name="fataLabelDeductible">Deductible</string>
+    <string name="fataLabelStatus">Status</string>
+    <string name="fataBtnAdd">ADD</string>
+    <string name="fataBtnModify">MODIFY</string>
+    <string name="fataErrorCode">Please enter code</string>
+    <string name="fataErrorLabel">Please enter label</string>
+
+
+    <!--Financial Accounting Expense Report Accounts screen-->
+    <string name="faerPageTitle">Expense Report Accounts</string>
+    <string name="faerLabelCode">Code</string>
+    <string name="faerLabelLabel">Label</string>
+    <string name="faerLabelAccountingCode">Accounting Code</string>
+    <string name="faerLabelStatus">Status</string>
+    <string name="faerBtnAdd">ADD</string>
+    <string name="faerBtnModify">MODIFY</string>
+    <string name="faerErrorCode">Please enter code</string>
+    <string name="faerErrorLabel">Please enter label</string>
+
+
+    <!--Financial Accounting Export Options screen-->
+    <string name="faeoPageTitle">Export Options</string>
+    <string name="faeoLabelOptions">Options</string>
+    <string name="faeoLabelSpecify">Specify the prefix for the file name</string>
+    <string name="faeoErrorSpecify">Please enter prefix for the file name</string>
+    <string name="faeoLabelModelExport">Model of export</string>
+    <string name="faeoLabelSelectModelExport">Select a model of export</string>
+    <string name="faeoLabelOtherOptions">Other options</string>
+    <string name="faeoLabelSelectFile">Select the format for the file</string>
+    <string name="faeoLabelColumnSeparator">Column separator for export file</string>
+    <string name="faeoLabelCarriageReturnType">Select the carriage return type</string>
+    <string name="faeoLabelDateFormat">Date format for export file</string>
+    <string name="faeoBtnModify">MODIFY</string>
+
+    <!--Financial Accounting Product Accounts screen-->
+    <string name="fapaPageTitle">Product Accounts</string>
+    <string name="fapaLabelModeSales">Mode Sales</string>
+    <string name="fapaLabelModeSalesDesc">Show all products with accounting account for sales.</string>
+    <string name="fapaLabelModeSalesExported">Mode sales exported in other countries</string>
+    <string name="fapaLabelModeSalesExportedDesc">Show all products with accounting account for other foreign sales.</string>
+    <string name="fapaLabelModePurchase">Mode Purchases</string>
+    <string name="fapaLabelModePurchaseDesc">Show all products with accounting account for purchases.</string>
+    <string name="fapaLabelModePurchaseImported">Show all products with accounting account for purchases.</string>
+    <string name="fapaLabelModePurchaseImportedDesc">Show all products with accounting account for purchases.</string>
+    <string name="fapaBtnRefresh">REFRESH</string>
+    <string name="fapaBtnSave">SAVE</string>
+    <string name="fapaBtnSearch">SEARCH</string>
+    <string name="fapaLabelRef">Ref</string>
+    <string name="fapaLabelLabel">Label</string>
+    <string name="fapaLabelCurrentDedicatedAccount">Current Dedicated Account</string>
+    <string name="fapaLabelNewAccountToAssign">New account to assign</string>
+
+
+    <!--Financial Accounting Customer Invoice Binding screen-->
+    <string name="facibPageTitle">Customer Invoice Binding</string>
+    <string name="facibLabelAccount">Account</string>
+    <string name="facibLabelLabel">Label</string>
+    <string name="facibLabelTotal">Total</string>
+    <string name="facibLabelBindAutomatically">Bind Automatically</string>
+    <string name="facibLabelLinesNotBound">Overview of amount of lines not bound to an accounting account(%s)</string>
+    <string name="facibLabelLinesBound">Overview of amount of lines already bound to an accounting account(%s)</string>
+
+    <!--Financial Accounting Customer Lines to Bind Screen-->
+    <string name="faclbindPageTitle">Lines of invoices to bind</string>
+    <string name="faclbindLabelIdLine">Id Line</string>
+    <string name="faclbindLabelInvoice">Invoice</string>
+    <string name="faclbindLabelDate">Date</string>
+    <string name="faclbindLabelRef">Product Ref.</string>
+    <string name="faclbindLabelDescription">Description</string>
+    <string name="faclbindLabelAmount">Amount(%s)</string>
+    <string name="faclbindLabelTax">Tax Rate(%s)</string>
+    <string name="faclbindLabelThirdParty">Third Party</string>
+    <string name="faclbindLabelCountry">Country</string>
+    <string name="faclbindLabelVatID">VAT ID</string>
+    <string name="faclbindLabelSuggested">Accounting account suggested</string>
+    <string name="faclbindLabelBindLineAccount">Bind line with the accounting account</string>
+    <string name="faclbindLabelOriginCountry">Origin Country</string>
+    <string name="faclbindLabelAccountDefaultForProduct">Default for Product: </string>
+    <string name="faclbindLabelNotDefined">Not Defined</string>
+    <string name="faclbindLabelAccountThisProduct">This Product: </string>
+
+    <!--Financial Accounting Customer Lines Bound Screen-->
+    <string name="faclboundPageTitle">Bound lines of invoices</string>
+    <string name="faclboundLabelIdLine">Id Line</string>
+    <string name="faclboundLabelInvoice">Invoice</string>
+    <string name="faclboundLabelDate">Date</string>
+    <string name="faclboundLabelRef">Product Ref.</string>
+    <string name="faclboundLabelDescription">Description</string>
+    <string name="faclboundLabelAmount">Amount(%s)</string>
+    <string name="faclboundLabelTax">Tax Rate(%s)</string>
+    <string name="faclboundLabelThirdParty">Third Party</string>
+    <string name="faclboundLabelCountry">Country</string>
+    <string name="faclboundLabelVatID">VAT ID</string>
+    <string name="faclboundLabelAccount">Account</string>
+    <string name="faclboundLabelOriginCountry">Origin Country</string>
+    <string name="faclboundBtnChangeBinding">Change the Binding</string>
+    <string name="faclboundLabelChangeBinding">Change the product/service accounting account for selected lines with the following accounting account</string>
+    <string name="faclboundErrorSelectInvoiceToChangeBinding">Please select at least one invoice to change binding</string>
+
+
+    <!--Financial Accounting Expense Report Binding screen-->
+    <string name="faerbPageTitle">Expense Report Binding</string>
+    <string name="faerbLabelAccount">Account</string>
+    <string name="faerbLabelLabel">Label</string>
+    <string name="faerbLabelTotal">Total</string>
+    <string name="faerbLabelBindAutomatically">Bind Automatically</string>
+    <string name="faerbLabelLinesNotBound">Overview of amount of lines not bound to an accounting account(%s)</string>
+    <string name="faerbLabelLinesBound">Overview of amount of lines already bound to an accounting account(%S)</string>
+
+    <!--Financial Accounting Expense Lines to Bind -->
+    <string name="faelbindPageTitle">Lines of expense reports to bind</string>
+    <string name="faelbindLabelIdLine">Id Line</string>
+    <string name="faelbindLabelExpenseReport">Expense Report</string>
+    <string name="faelbindLabelDateOfLine">Date of line</string>
+    <string name="faelbindLabelTypeOfFees">Type of fees</string>
+    <string name="faelbindLabelDescription">Description</string>
+    <string name="faelbindLabelAmount">Amount(%s)</string>
+    <string name="faelbindLabelTaxRate">Tax Rate(%s)</string>
+    <string name="faelbindLabelSuggestedAccount">Accounting account suggested</string>
+    <string name="faelbindLabelBindLineAccount">Bind line with the accounting account</string>
+
+    <!--Financial Accounting Expense Lines Bound -->
+    <string name="faelboundPageTitle">Bound lines of expense reports</string>
+    <string name="faelboundLabelIdLine">Id Line</string>
+    <string name="faelboundLabelExpenseReport">Expense Report</string>
+    <string name="faelboundLabelDateOfLine">Date of line</string>
+    <string name="faelboundLabelTypeOfFees">Type of fees</string>
+    <string name="faelboundLabelDescription">Description</string>
+    <string name="faelboundLabelAmount">Amount(%s)</string>
+    <string name="faelboundLabelTaxRate">Tax Rate(%s)</string>
+    <string name="faelboundLabelAccount">Account</string>
+    <string name="faelboundBtnChangeBinding">Change the Binding</string>
+    <string name="faelboundLabelChangeBinding">Change the product/service accounting account for selected lines with the following accounting account</string>
+    <string name="faelboundErrorSelectExpenseToChangeBinding">Please select at least one expense to change binding</string>
+
+
+    <!--Financial Accounting Vendor Invoice Binding screen-->
+    <string name="favibPageTitle">Vendor Invoice Binding</string>
+    <string name="favibLabelAccount">Account</string>
+    <string name="favibLabelLabel">Label</string>
+    <string name="favibLabelTotal">Total</string>
+    <string name="favibLabelBindAutomatically">Bind Automatically</string>
+    <string name="favibLabelLinesNotBound">Overview of amount of lines not bound to an accounting account(%s)</string>
+    <string name="favibLabelLinesBound">Overview of amount of lines already bound to an accounting account(%s)</string>
+
+
+    <!--Financial Accounting Vendor Lines to Bind Screen-->
+    <string name="favlbindPageTitle">Lines of invoices to bind</string>
+    <string name="favlbindLabelIdLine">Id Line</string>
+    <string name="favlbindLabelInvoice">Invoice</string>
+    <string name="favlbindLabelLabel">Invoice Label</string>
+    <string name="favlbindLabelDate">Date</string>
+    <string name="favlbindLabelRef">Product Ref.</string>
+    <string name="favlbindLabelDescription">Description</string>
+    <string name="favlbindLabelAmount">Amount(%s)</string>
+    <string name="favlbindLabelTax">Tax Rate(%s)</string>
+    <string name="favlbindLabelThirdParty">Third Party</string>
+    <string name="favlbindLabelCountry">Country</string>
+    <string name="favlbindLabelVatID">VAT ID</string>
+    <string name="favlbindLabelSuggested">Accounting account suggested</string>
+    <string name="favlbindLabelBindLineAccount">Bind line with the accounting account</string>
+    <string name="favlbindLabelAccountDefaultForProduct">Default for Product: </string>
+    <string name="favlbindLabelNotDefined">Not Defined</string>
+    <string name="favlbindLabelAccountThisProduct">This Product: </string>
+
+
+    <!--Financial Accounting Vendor Lines to Bound Screen-->
+    <string name="favlboundPageTitle">Bound lines of invoices</string>
+    <string name="favlboundLabelIdLine">Id Line</string>
+    <string name="favlboundLabelInvoice">Invoice</string>
+    <string name="favlboundLabelLabel">Invoice Label</string>
+    <string name="favlboundLabelDate">Date</string>
+    <string name="favlboundLabelRef">Product Ref.</string>
+    <string name="favlboundLabelDescription">Description</string>
+    <string name="favlboundLabelAmount">Amount(%s)</string>
+    <string name="favlboundLabelTax">Tax Rate(%s)</string>
+    <string name="favlboundLabelThirdParty">Third Party</string>
+    <string name="favlboundLabelCountry">Country</string>
+    <string name="favlboundLabelVatID">VAT ID</string>
+    <string name="favlboundLabelAccount">Account</string>
+    <string name="favlboundBtnChangeBinding">Change the Binding</string>
+    <string name="favlboundLabelChangeBinding">Change the product/service accounting account for selected lines with the following accounting account</string>
+    <string name="favlboundErrorSelectInvoiceToChangeBinding">Please select at least one invoice to change binding</string>
+
+
+    <!--Financial Accounting Finance Journals Screen-->
+    <string name="fafjPageTitle">Journalization</string>
+    <string name="fafjLabelName">Name</string>
+    <string name="fafjLabelFinanceJournalBQ">Finance Journal | BQ</string>
+    <string name="fafjLabelReportPeriod">Report Period</string>
+    <string name="fafjLabelJournalizationStatus">Status of Journalization</string>
+    <string name="fafjLabelDescription">Description</string>
+    <string name="fafjLabelDescriptionText">This is a view of record that are bound to an accounting account and can be recorded into the Ledger.</string>
+    <string name="fafjLabelDate">Date</string>
+    <string name="fafjLabelAccountingDoc">Accounting Doc.</string>
+    <string name="fafjLabelAccountingAccount">Accounting Account</string>
+    <string name="fafjLabelSubledgerAccount">Subledger Account</string>
+    <string name="fafjLabelLabelOperation">Label Operation</string>
+    <string name="fafjLabelPaymentType">Payment Type</string>
+    <string name="fafjLabelDebit">Debit(%s)</string>
+    <string name="fafjLabelCredit">Credit(%s)</string>
+    <string name="fafjBtnRegisterTransaction">REGISTER TRANSACTION IN LEDGER</string>
+    <string name="fafjBtnRefresh">REFRESH</string>
+
+
+    <!--Financial Accounting Expense Report Journal Screen-->
+    <string name="faerjPageTitle">Journalization</string>
+    <string name="faerjLabelName">Name</string>
+    <string name="faerjLabelExpenseReportJournalER">Expense Reports Journal | ER</string>
+    <string name="faerjLabelReportPeriod">Report Period</string>
+    <string name="faerjLabelJournalizationStatus">Status of Journalization</string>
+    <string name="faerjLabelDescription">Description</string>
+    <string name="faerjLabelDescriptionText">This is a view of record that are bound to an accounting account and can be recorded into the Ledger.</string>
+    <string name="faerjLabelDate">Date</string>
+    <string name="faerjLabelAccountingDoc">Accounting Doc. (Source object ref)</string>
+    <string name="faerjLabelAccountingAccount">Accounting Account</string>
+    <string name="faerjLabelSubledgerAccount">Subledger Account</string>
+    <string name="faerjLabelLabelOperation">Label Operation</string>
+    <string name="faerjLabelDebit">Debit</string>
+    <string name="faerjLabelCredit">Credit</string>
+    <string name="faerjBtnRegisterTransaction">REGISTER TRANSACTION IN LEDGER</string>
+    <string name="faerjBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Sell Journal Screen-->
+    <string name="fasjPageTitle">Journalization</string>
+    <string name="fasjLabelName">Name</string>
+    <string name="fasjLabelSellJournalVT">Sales Journal | VT</string>
+    <string name="fasjLabelReportPeriod">Report Period</string>
+    <string name="fasjLabelJournalizationStatus">Status of Journalization</string>
+    <string name="fasjLabelDescription">Description</string>
+    <string name="fasjLabelDescriptionText">This is a view of record that are bound to an accounting account and can be recorded into the Ledger.- Down payment invoices are included</string>
+    <string name="fasjLabelDate">Date</string>
+    <string name="fasjLabelAccountingDoc">Accounting Doc. (Invoice ref.)</string>
+    <string name="fasjLabelAccountingAccount">Accounting Account</string>
+    <string name="fasjLabelSubledgerAccount">Subledger Account</string>
+    <string name="fasjLabelLabelOperation">Label Operation</string>
+    <string name="fasjLabelDebit">Debit</string>
+    <string name="fasjLabelCredit">Credit</string>
+    <string name="fasjBtnRegisterTransaction">REGISTER TRANSACTION IN LEDGER</string>
+    <string name="fasjBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Purchase Journal Screen-->
+    <string name="fapjPageTitle">Journalization</string>
+    <string name="fapjLabelName">Name</string>
+    <string name="fapjLabelPurchaseJournalAC">Purchases Journal | AC</string>
+    <string name="fapjLabelReportPeriod">Report Period</string>
+    <string name="fapjLabelJournalizationStatus">Status of Journalization</string>
+    <string name="fapjLabelDescription">Description</string>
+    <string name="fapjLabelDescriptionText">This is a view of record that are bound to an accounting account and can be recorded into the Ledger.- Down payment invoices are included</string>
+    <string name="fapjLabelDate">Date</string>
+    <string name="fapjLabelAccountingDoc">Accounting Doc. (Invoice ref.)</string>
+    <string name="fapjLabelAccountingAccount">Accounting Account</string>
+    <string name="fapjLabelSubledgerAccount">Subledger Account</string>
+    <string name="fapjLabelLabelOperation">Label Operation</string>
+    <string name="fapjLabelDebit">Debit</string>
+    <string name="fapjLabelCredit">Credit</string>
+    <string name="fapjBtnRegisterTransaction">REGISTER TRANSACTION IN LEDGER</string>
+    <string name="fapjBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Ledger Screen-->
+    <string name="faledgerPageTitle">Ledger</string>
+    <string name="faledgerLabelFrom">From</string>
+    <string name="faledgerLabelTo">To</string>
+    <string name="faledgerLabelNumTransaction">Num. Transaction</string>
+    <string name="faledgerLabelDate">Date</string>
+    <string name="faledgerLabelAccountingDoc">Accounting Doc.</string>
+    <string name="faledgerLabelAccount">Account</string>
+    <string name="faledgerLabelSubledgerAccount">Subledger Account</string>
+    <string name="faledgerLabelLabel">Label</string>
+    <string name="faledgerLabelDebit">Debit(%s)</string>
+    <string name="faledgerLabelCredit">Credit(%s)</string>
+    <string name="faledgerLabelJournal">Journal</string>
+    <string name="faledgerLabelDateExport">Date Export</string>
+    <string name="faledgerLabelIncludeDocs">Include docs already exported</string>
+    <string name="faledgerLabelExportFilteredList">Export Filtered list</string>
+    <string name="faledgerLabelGroupByAccounting">Group by Accounting Account</string>
+    <string name="faledgerLabelViewFlatList">View Flat List</string>
+    <string name="faledgerLabelLedgerByAccounting">Ledger by accounting account</string>
+    <string name="faledgerLabelNewTransaction">New Transaction</string>
+    <string name="faledgerBtnDeleteLedgerLines">DELETE LEDGER LINES</string>
+    <string name="faledgerBtnSearch">SEARCH</string>
+    <string name="faledgerBtnSearchDialog">Search</string>
+    <string name="faledgerLabelTotal">Total</string>
+    <string name="faledgerLabelTotalForAccountingAccount">Total for Accounting Account %s :</string>
+    <string name="faledgerLabelBalance">Balance :</string>
+
+
+    <!--Financial Accounting Delete Ledge Lines Dialog-->
+    <string name="faldlDialogTitle">Delete Ledger Lines</string>
+    <string name="faldlLabelMonthToDelete">Months to delete</string>
+    <string name="faldlLabelYearsToDelete">Year to delete</string>
+    <string name="faldlLabelJournalsToDelete">Journals to delete</string>
+    <string name="faldlLabelDescription">"This will delete all lines of the Ledger for the year,month and-or from a specific journal (At least one criterion is required). You will have to reuse the feature \'Registration in accounting' to have the deleted record back in the ledger."</string>
+    <string name="faldlBtnYes">YES</string>
+    <string name="faldlBtnNo">NO</string>
+
+    <!--Financial Accounting Ledger New Transaction Screen-->
+    <string name="falntPageTitle">Create New Transaction</string>
+    <string name="falntLabelDate">Date</string>
+    <string name="falntLabelJournal">Journal</string>
+    <string name="falntLabelAccountingDoc">Accounting Doc.</string>
+    <string name="falntBtnValidate">VALIDATE TRANSACTION</string>
+    <string name="falntBtnAdd">ADD</string>
+    <string name="falntLabelListOfMovements">List Movements</string>
+    <string name="falntLabelAccount">Account</string>
+    <string name="falntLabelSubledgerAccount">Subledger Account</string>
+    <string name="falntLabelLabelOperation">Label Operation</string>
+    <string name="falntLabelDebit">Debit(%s)</string>
+    <string name="falntLabelCredit">Credit(%s)</string>
+    <string name="falntErrorDate">Please enter date</string>
+    <string name="falntErrorAccountingDoc">Please enter accounting doc</string>
+    <string name="falntErrorDebitCreditSame">Debit and Credit cannot have a value at the same time</string>
+    <string name="falntErrorLedgerNotMaintained">Movement not correctly balanced. Credit must be equal to debit</string>
+    <string name="falntErrorAddListMovements">Please add list of movement</string>
+
+    <!--Financial Accounting Account Balance-->
+    <string name="faabPageTitle">Account Balance</string>
+    <string name="faabLabelStartDate">Start Date</string>
+    <string name="faabLabelEndDate">End Date</string>
+    <string name="faabLabelFrom">From</string>
+    <string name="faabLabelTo">To</string>
+    <string name="faabLabelAccountingAccount">Accounting Account</string>
+    <string name="faabLabelLabel">Label</string>
+    <string name="faabLabelOpeningBalance">Opening Balance</string>
+    <string name="faabLabelDebit">Debit(%s)</string>
+    <string name="faabLabelCredit">Credit(%s)</string>
+    <string name="faabLabelBalance">Balance(%s)</string>
+    <string name="faabLabelSubtotal">Sub Total:</string>
+    <string name="faabLabelAccountBalance">Account Balance:</string>
+    <string name="faabLabelExportTXT">Export Txt</string>
+
+    <!--Financial Accounting Export Accounting Document -->
+    <string name="faeadPageTitle">Export Accounting Documents</string>
+    <string name="faeadLabelReportPeriod">Report Period: </string>
+    <string name="faeadLabelInvoices">Invoices</string>
+    <string name="faeadLabelVendorInvoices">Vendor Invoices</string>
+    <string name="faeadLabelExpenseReports">Expense Reports</string>
+    <string name="faeadLabelDonations">Donations</string>
+    <string name="faeadLabelSalariesPayments">Salaries Payments</string>
+    <string name="faeadLabelSocialFiscalTaxed">Social or Fiscal Taxes</string>
+    <string name="faeadLabelMiscellaneousPayments">Miscellaneous Payments</string>
+    <string name="faeadLabelLoanPayments">Loan Payments</string>
+    <string name="faeadLabelType">Type</string>
+    <string name="faeadLabelDate">Date</string>
+    <string name="faeadLabelDueDate">Due Date</string>
+    <string name="faeadLabelRef">Ref.</string>
+    <string name="faeadLabelDocument">Document</string>
+    <string name="faeadLabelPaid">Paid(%s)</string>
+    <string name="faeadLabelTotalExcl">Total (excl. Tax)(%s)</string>
+    <string name="faeadLabelTotalIncl">Total (inc. Tax)(%s)</string>
+    <string name="faeadLabelTotalTax">Total Tax(%s)</string>
+    <string name="faeadLabelThirdParty">Third-party</string>
+    <string name="faeadLabelCode">Code</string>
+    <string name="faeadLabelCountry">Country</string>
+    <string name="faeadLabelVATID">VAT ID</string>
+    <string name="faeadLabelTotalIncome">Total Income</string>
+    <string name="faeadLabelTotalExpense">Total Expense</string>
+    <string name="faeadLabelTotal">Total</string>
+    <string name="faeadBtnSearch">SEARCH</string>
+    <string name="faeadBtnDownload">DOWNLOAD</string>
+    <string name="faeadFileDownload">Download</string>
+
+    <!--Financial Accounting Reporting Income / Expense Screen-->
+    <string name="fariePageTitle">Report</string>
+    <string name="farieLabelReportName">Report Name</string>
+    <string name="farieLabelReportNameText">Balance of income and expense. By Year</string>
+    <string name="farieLabelCalculationMode">Calculation Mode</string>
+    <string name="farieLabelCalculationModeText">"Analysis of data journalized in Bookkeeping Ledger table"</string>
+    <string name="farieLabelReportPeriod">Report Period</string>
+    <string name="farieLabelDescription">Description</string>
+    <string name="farieLabelDescriptionText">"It includes record in your Ledger with accounting accounts that has the group EXPENSE or INCOME"</string>
+    <string name="farieLabelBuildOn">Build on</string>
+    <string name="farieLabelMonth">Month</string>
+    <string name="farieLabelExpense">Expense(%s)</string>
+    <string name="farieLabelIncome">Income(%s)</string>
+    <string name="farieLabelTotal">Total</string>
+    <string name="farieLabelAccountingResult">Accounting Result</string>
+    <string name="farieBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Pre Defined Groups-->
+    <string name="fapdgPageTitle">Report</string>
+    <string name="fapdgLabelReportName">Report Name</string>
+    <string name="fapdgLabelReportNameText">Balance of income and expenses, By predefined groups</string>
+    <string name="fapdgLabelCalculationMode">Calculation Mode</string>
+    <string name="fapdgLabelCalculationModeText">"Analysis of data journalized in Bookkeeping Ledger table"</string>
+    <string name="fapdgLabelReportPeriod">Report Period</string>
+    <string name="fapdgLabelDetailByAccount">Show detail by account</string>
+    <string name="fapdgLabelDescription">Description</string>
+    <string name="fapdgLabelDescriptionText">"It includes record in your Ledger with accounting accounts that has the group EXPENSE or INCOME"</string>
+    <string name="fapdgLabelBuildOn">Build on</string>
+    <string name="fapdgLabelPredefinedGroups">Predefined Groups</string>
+    <string name="fapdgLabelAmount">Amount(%s)</string>
+    <string name="fapdgLabelIncome">INCOME</string>
+    <string name="fapdgLabelExpense">EXPENSE</string>
+    <string name="fapdgLabelProfit">Profit</string>
+    <string name="fapdgBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Personalized Groups-->
+    <string name="farpgPageTitle">Report</string>
+    <string name="farpgLabelReportName">Report Name</string>
+    <string name="farpgLabelReportNameText">Balance of income and expenses, By personalized groups</string>
+    <string name="farpgLabelCalculationMode">Calculation Mode</string>
+    <string name="farpgLabelCalculationModeText">"Analysis of data journalized in Bookkeeping Ledger table"</string>
+    <string name="farpgLabelReportPeriod">Report Period</string>
+    <string name="farpgLabelDetailByAccount">Show detail by account</string>
+    <string name="farpgLabelDescription">Description</string>
+    <string name="farpgLabelDescriptionText">"It show record in your Ledger with accounting accounts grouped by personalized groups"</string>
+    <string name="farpgLabelBuildOn">Build on</string>
+    <string name="farpgLabelPersonalizedGroups">Personalized Groups</string>
+    <string name="farpgLabelPreviousPeriod">Previous Period</string>
+    <string name="farpgLabelSelectedPeriod">Selected Period</string>
+    <string name="farpgLabelProfit">Profit</string>
+    <string name="farpgLabelBalance">Balance</string>
+    <string name="farpgBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Invoiced -->
+    <string name="fatoiPageTitle">Report</string>
+    <string name="fatoiLabelReportName">Report Name</string>
+    <string name="fatoiLabelReportNameText">Turnover invoiced</string>
+    <string name="fatoiLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoiLabelCalculationModeText">Analysis of data journalized in Bookkeeping Ledger table</string>
+    <string name="fatoiLabelReportPeriod">Report Period</string>
+    <string name="fatoiLabelDescription">Description</string>
+    <string name="fatoiLabelDescriptionText">It includes all credit lines from the Sale journal</string>
+    <string name="fatoiLabelBuildOn">Build on</string>
+    <string name="fatoiLabelMonth">Month</string>
+    <string name="fatoiLabelAmountIncl">Amount (incl. tax)(%s)</string>
+    <string name="fatoiLabelAmountExcl">Amount (excl. tax)(%s)</string>
+    <string name="fatoiLabelDelta">Delta</string>
+    <string name="fatoiLabelTotal">Total</string>
+    <string name="fatoiBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Invoiced By Third Parties-->
+    <string name="fatoitpPageTitle">Report</string>
+    <string name="fatoitpLabelReportName">Report Name</string>
+    <string name="fatoitpLabelReportNameText">Turnover invoiced, By third parties</string>
+    <string name="fatoitpLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoitpLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="fatoitpLabelReportPeriod">Report Period</string>
+    <string name="fatoitpLabelDetailByAccount">Show detail by account</string>
+    <string name="fatoitpLabelDescription">Description</string>
+    <string name="fatoitpLabelDescriptionText">"- It includes the customer's due invoices whether they are paid or not.\n- It is based on the billing date of these invoices.\n- Down payment invoices are included"</string>
+    <string name="fatoitpLabelBuildOn">Build on</string>
+    <string name="fatoitpLabelCompany">Company</string>
+    <string name="fatoitpLabelZipCode">Zip Code</string>
+    <string name="fatoitpLabelCity">City</string>
+    <string name="fatoitpLabelCountry">Country</string>
+    <string name="fatoitpLabelAmountExcl">Amount(excl. tax)(%s)</string>
+    <string name="fatoitpLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="fatoitpLabelPercentage">Percentage</string>
+    <string name="fatoitpLabelOtherStatistics">Other Statistics</string>
+    <string name="fatoitpLabelTotal">Total</string>
+    <string name="fatoitpLabelCategories">Without Tag/category</string>
+    <string name="fatoitpLabelSubCategories">Sub Categories?</string>
+    <string name="fatoitpBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Invoiced By User-->
+    <string name="fatoiuPageTitle">Report</string>
+    <string name="fatoiuLabelReportName">Report Name</string>
+    <string name="fatoiuLabelReportNameText">Turnover invoiced, By invoice author</string>
+    <string name="fatoiuLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoiuLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="fatoiuLabelReportPeriod">Report Period</string>
+    <string name="fatoiuLabelDetailByAccount">Show detail by account</string>
+    <string name="fatoiuLabelDescription">Description</string>
+    <string name="fatoiuLabelDescriptionText">"- It includes the customer's due invoices whether they are paid or not.\n- It is based on the billing date of these invoices.\n- Down payment invoices are included"</string>
+    <string name="fatoiuLabelBuildOn">Build on</string>
+    <string name="fatoiuLabelUser">User</string>
+    <string name="fatoiuLabelAmountExcl">Amount(excl. tax)(%s)</string>
+    <string name="fatoiuLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="fatoiuLabelPercentage">Percentage</string>
+    <string name="fatoiuLabelOtherStatistics">Other Statistics</string>
+    <string name="fatoiuLabelTotal">Total</string>
+    <string name="fatoiuBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Invoiced By Product and Service-->
+    <string name="fatoipsPageTitle">Report</string>
+    <string name="fatoipsLabelReportName">Report Name</string>
+    <string name="fatoipsLabelReportNameText">Turnover invoiced, By product and service</string>
+    <string name="fatoipsLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoipsLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="fatoipsLabelReportPeriod">Report Period</string>
+    <string name="fatoipsLabelDetailByAccount">Show detail by account</string>
+    <string name="fatoipsLabelDescription">Description</string>
+    <string name="fatoipsLabelDescriptionText">"- It includes the customer's due invoices whether they are paid or not.\n- It is based on the billing date of these invoices.\n- Down payment invoices are included"</string>
+    <string name="fatoipsLabelBuildOn">Build on</string>
+    <string name="fatoipsLabelProduct">Product</string>
+    <string name="fatoipsLabelQuantity">Quantity</string>
+    <string name="fatoipsLabelAmountExcl">Amount(excl. tax)(%s)</string>
+    <string name="fatoipsLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="fatoipsLabelPercentage">Percentage</string>
+    <string name="fatoipsLabelOtherStatistics">Other Statistics</string>
+    <string name="fatoipsLabelCategories">Without Tag/category</string>
+    <string name="fatoipsLabelSubCategories">Sub Categories?</string>
+    <string name="fatoipsLabelType">Type</string>
+    <string name="fatoipsLabelThirdParty">Third Party</string>
+    <string name="fatoipsLabelTotal">Total</string>
+    <string name="fatoipsBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Invoiced By Sale Tax Rate-->
+    <string name="fatoistrPageTitle">Report</string>
+    <string name="fatoistrLabelReportName">Report Name</string>
+    <string name="fatoistrLabelReportNameText">Turnover invoiced, By sale tax rate</string>
+    <string name="fatoistrLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoistrLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="fatoistrLabelReportPeriod">Report Period</string>
+    <string name="fatoistrLabelDetailByAccount">Show detail by account</string>
+    <string name="fatoistrLabelDescription">Description</string>
+    <string name="fatoistrLabelDescriptionText">"-- It includes the customer's due invoices whether they are paid or not.\n- It is based on the billing date of these invoices.\n- Down payment invoices are included"</string>
+    <string name="fatoistrLabelBuildOn">Build on</string>
+    <string name="fatoistrLabelTurnOverInvoicedBySaleTaxRate">Turnover invoiced by sale tax rate</string>
+    <string name="fatoistrLabelProductOrService">Product or Service</string>
+    <string name="fatoistrLabelTotalExclTax">Total (excl. tax)(%s)</string>
+    <string name="fatoistrLabelTotal">Total</string>
+    <string name="fatoistrLabelPurchaseBySaleTaxRate">Purchase by sale tax rate</string>
+    <string name="fatoistrLabelCountry">Country</string>
+    <string name="fatoistrBtnRefresh">REFRESH</string>
+
+
+    <!--Financial Accounting Reporting Turn Over Collected  -->
+    <string name="fatocPageTitle">Report</string>
+    <string name="fatocLabelReportName">Report Name</string>
+    <string name="fatocLabelReportNameText">Turnover collected</string>
+    <string name="fatocLabelCalculationMode">Calculation Mode</string>
+    <string name="fatocLabelCalculationModeText">Analysis of known recorded payments, even if they are not yet accounted in Ledger</string>
+    <string name="fatocLabelReportPeriod">Report Period</string>
+    <string name="fatocLabelDescription">Description</string>
+    <string name="fatocLabelDescriptionText">- It includes all the effective payments of invoices received from customers.\n- It is based on the payment date of these invoices\n- Down payment invoices are included</string>
+    <string name="fatocLabelBuildOn">Build on</string>
+    <string name="fatocLabelMonth">Month</string>
+    <string name="fatocLabelAmountIncl">Amount (incl. tax)(%s)</string>
+    <string name="fatocLabelDelta">Delta</string>
+    <string name="fatocLabelTotal">Total</string>
+    <string name="fatocBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Collected By Third Parties-->
+    <string name="fatoctpPageTitle">Report</string>
+    <string name="fatoctpLabelReportName">Report Name</string>
+    <string name="fatoctpLabelReportNameText">Turnover collected, By third parties</string>
+    <string name="fatoctpLabelCalculationMode">Calculation Mode</string>
+    <string name="fatoctpLabelCalculationModeText">Analysis of known recorded payments, even if they are not yet accounted in Ledger</string>
+    <string name="fatoctpLabelReportPeriod">Report Period</string>
+    <string name="fatoctpLabelDetailByAccount">Show detail by account</string>
+    <string name="fatoctpLabelDescription">Description</string>
+    <string name="fatoctpLabelDescriptionText">"- It includes all the effective payments of invoices received from customers.\n- It is based on the payment date of these invoices\n- Down payment invoices are included"</string>
+    <string name="fatoctpLabelBuildOn">Build on</string>
+    <string name="fatoctpLabelCompany">Company</string>
+    <string name="fatoctpLabelZipCode">Zip Code</string>
+    <string name="fatoctpLabelCity">City</string>
+    <string name="fatoctpLabelCountry">Country</string>
+    <string name="fatoctpLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="fatoctpLabelPercentage">Percentage</string>
+    <string name="fatoctpLabelOtherStatistics">Other Statistics</string>
+    <string name="fatoctpLabelTotal">Total</string>
+    <string name="fatoctpLabelCategories">Without Tag/category</string>
+    <string name="fatoctpLabelSubCategories">Sub Categories?</string>
+    <string name="fatoctpBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Turn Over Collected By User-->
+    <string name="fatocuPageTitle">Report</string>
+    <string name="fatocuLabelReportName">Report Name</string>
+    <string name="fatocuLabelReportNameText">Turnover collected, By invoice author</string>
+    <string name="fatocuLabelCalculationMode">Calculation Mode</string>
+    <string name="fatocuLabelCalculationModeText">Analysis of known recorded payments, even if they are not yet accounted in Ledger</string>
+    <string name="fatocuLabelReportPeriod">Report Period</string>
+    <string name="fatocuLabelDetailByAccount">Show detail by account</string>
+    <string name="fatocuLabelDescription">Description</string>
+    <string name="fatocuLabelDescriptionText">"- It includes all the effective payments of invoices received from customers.\n- It is based on the payment date of these invoices\n- Down payment invoices are included"</string>
+    <string name="fatocuLabelBuildOn">Build on</string>
+    <string name="fatocuLabelUser">User</string>
+    <string name="fatocuLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="fatocuLabelPercentage">Percentage</string>
+    <string name="fatocuLabelOtherStatistics">Other Statistics</string>
+    <string name="fatocuLabelTotal">Total</string>
+    <string name="fatocuBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Purchase Turn Over Invoiced  -->
+    <string name="faptoiPageTitle">Report</string>
+    <string name="faptoiLabelReportName">Report Name</string>
+    <string name="faptoiLabelReportNameText">Purchase turnover</string>
+    <string name="faptoiLabelCalculationMode">Calculation Mode</string>
+    <string name="faptoiLabelCalculationModeText">Analysis of data journalized in Bookkeeping Ledger table</string>
+    <string name="faptoiLabelReportPeriod">Report Period</string>
+    <string name="faptoiLabelDescription">Description</string>
+    <string name="faptoiLabelDescriptionText">It includes all debit lines from the purchase journal</string>
+    <string name="faptoiLabelBuildOn">Build on</string>
+    <string name="faptoiLabelMonth">Month</string>
+    <string name="faptoiLabelAmountExcl">Amount (excl. tax)(%s)</string>
+    <string name="faptoiLabelAmountIncl">Amount (incl. tax)(%s)</string>
+    <string name="faptoiLabelDelta">Delta</string>
+    <string name="faptoiLabelTotal">Total</string>
+    <string name="faptoiBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Purchase Turn Over Invoiced By Third Parties-->
+    <string name="faptoitpPageTitle">Report</string>
+    <string name="faptoitpLabelReportName">Report Name</string>
+    <string name="faptoitpLabelReportNameText">Purchase turnover, By third parties</string>
+    <string name="faptoitpLabelCalculationMode">Calculation Mode</string>
+    <string name="faptoitpLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="faptoitpLabelReportPeriod">Report Period</string>
+    <string name="faptoitpLabelDetailByAccount">Show detail by account</string>
+    <string name="faptoitpLabelDescription">Description</string>
+    <string name="faptoitpLabelDescriptionText">"- It includes the supplier's due invoices whether they are paid or not.\n- It is based on the invoice date of these invoices."</string>
+    <string name="faptoitpLabelBuildOn">Build on</string>
+    <string name="faptoitpLabelCompany">Company</string>
+    <string name="faptoitpLabelZipCode">Zip Code</string>
+    <string name="faptoitpLabelCity">City</string>
+    <string name="faptoitpLabelCountry">Country</string>
+    <string name="faptoitpLabelAmountExcl">Amount(excl. tax)(%s)</string>
+    <string name="faptoitpLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="faptoitpLabelPercentage">Percentage</string>
+    <string name="faptoitpLabelOtherStatistics">Other Statistics</string>
+    <string name="faptoitpLabelTotal">Total</string>
+    <string name="faptoitpLabelCategories">Without Tag/category</string>
+    <string name="faptoitpLabelSubCategories">Sub Categories?</string>
+    <string name="faptoitpBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Purchase Turn Over Invoiced By Product and Service-->
+    <string name="faptoipsPageTitle">Report</string>
+    <string name="faptoipsLabelReportName">Report Name</string>
+    <string name="faptoipsLabelReportNameText">Turnover invoiced, By product and service</string>
+    <string name="faptoipsLabelCalculationMode">Calculation Mode</string>
+    <string name="faptoipsLabelCalculationModeText">Analysis of known recorded invoices even if they are not yet accounted in ledger</string>
+    <string name="faptoipsLabelReportPeriod">Report Period</string>
+    <string name="faptoipsLabelDetailByAccount">Show detail by account</string>
+    <string name="faptoipsLabelDescription">Description</string>
+    <string name="faptoipsLabelDescriptionText">"- It includes the customer's due invoices whether they are paid or not.\n- It is based on the billing date of these invoices.\n- Down payment invoices are included"</string>
+    <string name="faptoipsLabelBuildOn">Build on</string>
+    <string name="faptoipsLabelProduct">Product</string>
+    <string name="faptoipsLabelQuantity">Quantity</string>
+    <string name="faptoipsLabelAmountExcl">Amount(excl. tax)(%s)</string>
+    <string name="faptoipsLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="faptoipsLabelPercentage">Percentage</string>
+    <string name="faptoipsLabelOtherStatistics">Other Statistics</string>
+    <string name="faptoipsLabelCategories">Without Tag/category</string>
+    <string name="faptoipsLabelSubCategories">Sub Categories?</string>
+    <string name="faptoipsLabelType">Type</string>
+    <string name="faptoipsLabelThirdParty">Third Party</string>
+    <string name="faptoipsLabelTotal">Total</string>
+    <string name="faptoipsBtnRefresh">REFRESH</string>
+
+
+    <!--Financial Accounting Reporting Purchase Turn Over Collected  -->
+    <string name="faptocPageTitle">Report</string>
+    <string name="faptocLabelReportName">Report Name</string>
+    <string name="faptocLabelReportNameText">Purchase turnover collected</string>
+    <string name="faptocLabelCalculationMode">Calculation Mode</string>
+    <string name="faptocLabelCalculationModeText">Analysis of known recorded payments, even if they are not yet accounted in Ledger</string>
+    <string name="faptocLabelReportPeriod">Report Period</string>
+    <string name="faptocLabelDescription">Description</string>
+    <string name="faptocLabelDescriptionText">- It includes all the effective payments of invoices done to suppliers.\n- It is based on the payment date of these invoices</string>
+    <string name="faptocLabelBuildOn">Build on</string>
+    <string name="faptocLabelMonth">Month</string>
+    <string name="faptocLabelAmountIncl">Amount (incl. tax)(%s)</string>
+    <string name="faptocLabelDelta">Delta</string>
+    <string name="faptocLabelTotal">Total</string>
+    <string name="faptocBtnRefresh">REFRESH</string>
+
+    <!--Financial Accounting Reporting Purchase Turn Over Collected By Third Parties-->
+    <string name="faptoctpPageTitle">Report</string>
+    <string name="faptoctpLabelReportName">Report Name</string>
+    <string name="faptoctpLabelReportNameText">Purchase turnover collected, By third parties</string>
+    <string name="faptoctpLabelCalculationMode">Calculation Mode</string>
+    <string name="faptoctpLabelCalculationModeText">Analysis of known recorded payments, even if they are not yet accounted in Ledger</string>
+    <string name="faptoctpLabelReportPeriod">Report Period</string>
+    <string name="faptoctpLabelDetailByAccount">Show detail by account</string>
+    <string name="faptoctpLabelDescription">Description</string>
+    <string name="faptoctpLabelDescriptionText">"- It includes all the effective payments of invoices done to suppliers.\n- It is based on the payment date of these invoices"</string>
+    <string name="faptoctpLabelBuildOn">Build on</string>
+    <string name="faptoctpLabelCompany">Company</string>
+    <string name="faptoctpLabelZipCode">Zip Code</string>
+    <string name="faptoctpLabelCity">City</string>
+    <string name="faptoctpLabelCountry">Country</string>
+    <string name="faptoctpLabelAmountIncl">Amount(incl. tax)(%s)</string>
+    <string name="faptoctpLabelPercentage">Percentage</string>
+    <string name="faptoctpLabelOtherStatistics">Other Statistics</string>
+    <string name="faptoctpLabelTotal">Total</string>
+    <string name="faptoctpLabelCategories">Without Tag/category</string>
+    <string name="faptoctpLabelSubCategories">Sub Categories?</string>
+    <string name="faptoctpBtnRefresh">REFRESH</string>
+
+
+</resources>

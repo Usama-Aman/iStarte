@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/customer_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_1sdp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <TextView
+                android:id="@+id/numTransaction"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                android:id="@+id/accountingDoc"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/account"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/subledgerAccount"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/label"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <TextView
+                android:id="@+id/debit"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                android:id="@+id/credit"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                android:id="@+id/journal"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+            <TextView
+                android:id="@+id/exportedDate"
+                style="@style/item_list_style"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/table_layout_h_text_size" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_edit_item" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_delete_item" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+    </LinearLayout>
+</RelativeLayout>

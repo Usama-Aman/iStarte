@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "715155831107",
+    "firebase_url": "https://istarte-544dc.firebaseio.com",
+    "project_id": "istarte-544dc",
+    "storage_bucket": "istarte-544dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715155831107:android:8b135e2fbdc7f6094557f6",
+        "android_client_info": {
+          "package_name": "com.minbio.erp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715155831107-hsuc579sgrql46jiusq720j6jcom4h2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT_FinGiEFsvTqgUx0blh_cTkH-DOoUBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715155831107-hsuc579sgrql46jiusq720j6jcom4h2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

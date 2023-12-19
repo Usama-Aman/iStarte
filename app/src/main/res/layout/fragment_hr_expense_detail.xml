@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/corporateProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/customer_top_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_small_blue_back" />
+
+            <TextView
+                style="@style/page_title_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_2sdp"
+                android:text=""
+                android:textSize="@dimen/_5sdp" />
+
+            <ImageView
+                android:id="@+id/detail_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_detail_add"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/detail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:src="@drawable/ic_detail_edit"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            app:layout_constraintTop_toBottomOf="@id/customer_top_linear" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/customer_image"
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_plc"
+            app:civ_border_color="#E5E5E5"
+            app:civ_border_width="1dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+        <TextView
+            android:id="@+id/tvEmployeeId"
+            style="@style/input_label_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_btn_normal"
+            android:textSize="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="@id/customer_image"
+            app:layout_constraintLeft_toRightOf="@id/g1"
+            app:layout_constraintTop_toTopOf="@id/customer_image" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/input_label_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@id/customer_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/customer_image" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@id/btnSave"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_image">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/ge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="1" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelUser"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/gs"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvUser"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textColor="@color/tab_btn_normal"
+                    app:layout_constraintLeft_toRightOf="@id/gs"
+                    app:layout_constraintRight_toLeftOf="@id/gm1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="t1,tvUser" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelAmount"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/gs"
+                    app:layout_constraintTop_toBottomOf="@id/b1" />
+
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintLeft_toRightOf="@id/gs"
+                    app:layout_constraintRight_toLeftOf="@id/gm1"
+                    app:layout_constraintTop_toTopOf="@id/b1" />
+
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="t2,tvType" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelStartDate"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/gs"
+                    app:layout_constraintTop_toBottomOf="@id/b2" />
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    app:layout_constraintLeft_toRightOf="@id/gs"
+                    app:layout_constraintRight_toLeftOf="@id/gm1"
+                    app:layout_constraintTop_toTopOf="@id/b2" />
+
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="t3,tvStartDate" />
+
+                <TextView
+                    android:id="@+id/t6"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelDescription"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/gs"
+                    app:layout_constraintTop_toBottomOf="@id/b3" />
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    app:layout_constraintLeft_toRightOf="@id/gs"
+                    app:layout_constraintRight_toLeftOf="@id/gm1"
+                    app:layout_constraintTop_toTopOf="@id/b3" />
+
+
+                <TextView
+                    android:id="@+id/t7"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:fontFeatureSettings="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelRequestedBy"
+                    app:layout_constraintLeft_toRightOf="@id/gm1"
+                    app:layout_constraintRight_toLeftOf="@id/gm2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvRequestedBy"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textColor="@color/tab_btn_normal"
+                    app:layout_constraintLeft_toRightOf="@id/gm2"
+                    app:layout_constraintRight_toLeftOf="@id/ge"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="t7,tvRequestedBy" />
+
+
+                <TextView
+                    android:id="@+id/t8"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelApprovedBy"
+                    app:layout_constraintLeft_toRightOf="@id/gm1"
+                    app:layout_constraintRight_toLeftOf="@id/gm2"
+                    app:layout_constraintTop_toBottomOf="@id/b6" />
+
+
+                <TextView
+                    android:id="@+id/tvApprovedBy"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textColor="@color/tab_btn_normal"
+                    app:layout_constraintLeft_toRightOf="@id/gm2"
+                    app:layout_constraintRight_toLeftOf="@id/ge"
+                    app:layout_constraintTop_toTopOf="@id/b6" />
+
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/b7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="t8,tvApprovedBy" />
+
+
+                <TextView
+                    android:id="@+id/t9"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:text="@string/hrEDLabelCreationDate"
+                    app:layout_constraintLeft_toRightOf="@id/gm1"
+                    app:layout_constraintRight_toLeftOf="@id/gm2"
+                    app:layout_constraintTop_toBottomOf="@id/b7" />
+
+                <TextView
+                    android:id="@+id/tvCreationDate"
+                    style="@style/input_label_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    app:layout_constraintLeft_toRightOf="@id/gm2"
+                    app:layout_constraintRight_toLeftOf="@id/ge"
+                    app:layout_constraintTop_toTopOf="@id/b7" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/height_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/round_box_blue"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btnDelete">
+
+            <TextView
+                android:id="@+id/btnText1"
+                style="@style/white_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_pro_save"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/hrLeavesBtnSave" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/height_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/round_box_blue"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/btnSave"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/btnText2"
+                style="@style/white_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_delete"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/hrLeavesBtnDelete" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

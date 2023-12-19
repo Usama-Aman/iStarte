@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quality_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_1sdp">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/categoriesRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_16sdp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_quality_search"
+                                style="@style/InputTypeText_noborder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#f9f9f9"
+                                android:drawableLeft="@drawable/ic_search"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:hint="@string/proSearch"
+                                android:inputType="textPersonName"
+                                android:textColor="#0a4e65"
+                                android:textColorHint="#0a4e65" />
+
+                            <TextView
+                                android:id="@+id/btn_add"
+                                style="@style/white_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorDarkBlue"
+                                android:drawableTop="@drawable/ic_add_cust"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingRight="@dimen/_8sdp"
+                                android:text="@string/pro_add_product"
+                                android:textSize="@dimen/_4sdp" />
+                        </LinearLayout>
+
+                        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                            android:id="@+id/pull_to_refresh_quality"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/qualityRecycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_btw_left_right">
+
+                    <RadioGroup
+                        android:id="@+id/qualityRightRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/qualityIncoming"
+                            style="@style/tab_button_right_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_left_button_selector"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_incoming"
+                            android:text="@string/qualityLabelIncoming" />
+
+                        <RadioButton
+                            android:id="@+id/qualityComplaintsToSupplier"
+                            style="@style/tab_button_right_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_mid_button_selector"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_corporate"
+                            android:text="@string/qualityLabelComplaintToSupplies" />
+
+                        <RadioButton
+                            android:id="@+id/qualityLostTrashed"
+                            style="@style/tab_button_right_nor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tab_right_button_selector"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/ic_bank_detail"
+                            android:text="@string/qualityLabelLostTrashed" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/quality_management_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

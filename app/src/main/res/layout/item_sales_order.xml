@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/orderMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <CheckBox
+            android:id="@+id/lotNoCheck"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_selector"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/productName"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/varietyName"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/categoryName"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/size"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/origin"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/tare"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <com.minbio.erp.utils.CustomSearchableSpinner
+            android:id="@+id/quantitySpinner"
+            style="@style/InputTypeText_bot_border"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingRight="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/packaging"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/vat"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+        <TextView
+            android:id="@+id/total"
+            style="@style/item_list_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/table_layout_h_text_size" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"
+        app:layout_constraintTop_toBottomOf="@id/linear1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

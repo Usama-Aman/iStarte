@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBBlue"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/_2sdp">
+
+
+            <TextView
+                android:id="@+id/variatey_title"
+                style="@style/genral_5s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_add_variety_lot"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="@drawable/ic_add_variety_lot"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn_edit_variety"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_edit_variety"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="@drawable/ic_edit"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkBlue"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_no"
+                    android:textColor="@color/detail_h_color" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_quantity"
+                    android:textAlignment="center"
+                    android:textColor="@color/detail_h_color" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_origin"
+                    android:textAlignment="center"
+                    android:textColor="@color/detail_h_color" />
+
+                <TextView
+                    android:id="@+id/productTvSell"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_sell"
+                    android:textAlignment="center"
+                    android:textColor="@color/detail_h_color" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_incom"
+                    android:textAlignment="center"
+                    android:textColor="@color/detail_h_color" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/genral_4s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pro_lot_de_lot_buy"
+                    android:textAlignment="center"
+                    android:textColor="@color/detail_h_color" />
+
+                <Button
+                    android:id="@+id/btnspace"
+                    android:layout_width="@dimen/_7sdp"
+                    android:layout_height="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2c6175" />
+
+            <LinearLayout
+                android:id="@+id/variatey_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_2sdp">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

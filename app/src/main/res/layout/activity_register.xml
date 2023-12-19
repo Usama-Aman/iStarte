@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainbody"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/margin_10">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_box"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/ic_istarte" />
+
+        <TextView
+            android:id="@+id/loginTile"
+            style="@style/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/registerTitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ScrollView
+                android:id="@+id/scroolTopView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/btn_login">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_siren"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblSiren" />
+
+                            <EditText
+                                android:id="@+id/txtsiren"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_siren_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtbusiness" />
+
+                            <TextView
+                                android:id="@+id/error_siren"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/business_outer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/lbl_business"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblcorporate" />
+
+                            <EditText
+                                android:id="@+id/txtbusiness"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_business_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtcorporateadd"
+                                android:text="ENTREPRISE TEST RADIEE" />
+
+                            <TextView
+                                android:id="@+id/error_business"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_corporateadd"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblcorporateAdd" />
+
+                            <TextView
+                                android:id="@+id/txtcorporateadd"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_corp_add_logo"
+                                android:drawablePadding="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtzipcode" />
+
+                            <TextView
+                                android:id="@+id/error_corporateadd"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/lbl_zipcode"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblzipcode" />
+
+                            <EditText
+                                android:id="@+id/txtzipcode"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_zip_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="text"
+                                android:maxLines="1" />
+
+                            <TextView
+                                android:id="@+id/error_zipcode"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblCountry" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40">
+
+                                <ImageView
+                                    android:id="@+id/ivCountry"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_country_logo"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <com.minbio.erp.utils.CustomSearchableSpinner
+                                    android:id="@+id/countriesSpinnerRegister"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="@dimen/_5sdp"
+                                    app:layout_constraintLeft_toRightOf="@id/ivCountry"
+                                    app:layout_constraintRight_toRightOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <TextView
+                                android:id="@+id/error_country"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_email"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loginEmail" />
+
+                            <EditText
+                                android:id="@+id/txtEmail"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_email_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="textEmailAddress"
+                                android:nextFocusDown="@id/txtcontactfanme" />
+
+                            <TextView
+                                android:id="@+id/error_email"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_contactfanme"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblContFName" />
+
+                            <EditText
+                                android:id="@+id/txtcontactfanme"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_con_name_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtcontactlname" />
+
+                            <TextView
+                                android:id="@+id/error_contactfanme"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/lbl_contactlname"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblContLName" />
+
+                            <EditText
+                                android:id="@+id/txtcontactlname"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_con_name_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtcontacttitle" />
+
+                            <TextView
+                                android:id="@+id/error_contactlname"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_contacttitle"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblContTitle" />
+
+                            <EditText
+                                android:id="@+id/txtcontacttitle"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_title_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/txtmobile" />
+
+                            <TextView
+                                android:id="@+id/error_contacttitle"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lbl_mobile"
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblMobile" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/phoneNumber_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:background="@drawable/round_box_stroke"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <com.hbb20.CountryCodePicker
+                                    android:id="@+id/mobileCodePicker"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    app:ccpDialog_keyboardAutoPopup="false"
+                                    app:ccp_defaultNameCode="FR"
+                                    app:ccp_showNameCode="false"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/txtmobile"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorTransparent"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:inputType="text|phone"
+                                    android:maxLines="1"
+                                    android:nextFocusDown="@id/et_register_password"
+                                    android:paddingLeft="@dimen/_1sdp"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/_6sdp"
+                                    app:layout_constraintLeft_toRightOf="@id/mobileCodePicker"
+                                    app:layout_constraintRight_toRightOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <TextView
+                                android:id="@+id/error_mobile"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_20"
+
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblPassword" />
+
+                            <EditText
+                                android:id="@+id/et_register_password"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_password_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:nextFocusDown="@id/et_register_Cpassword" />
+
+                            <TextView
+                                android:id="@+id/error_register_password"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/regLblConfirmPassword" />
+
+                            <EditText
+                                android:id="@+id/et_register_Cpassword"
+                                style="@style/InputTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40"
+                                android:drawableLeft="@drawable/ic_password_logo"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLines="1" />
+
+                            <TextView
+                                android:id="@+id/error_register_Cpassword"
+                                style="@style/error_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/btn_login"
+                android:layout_width="@dimen/button_width_reg"
+                android:layout_height="@dimen/height_40"
+                android:layout_above="@id/footer_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:background="@drawable/round_box_blue"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/login_text"
+                    style="@style/white_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_login_logo"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:text="@string/registerButton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer_text"
+                style="@style/footer_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="@drawable/round_bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/txt_already_reg" />
+
+                <TextView
+                    android:id="@+id/back_to_login"
+                    style="@style/footer_text_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_login_reg" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_register"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorBBlue" />
+
+
+</RelativeLayout>

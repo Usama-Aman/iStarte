@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sales_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_top_h"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/saleProfileLayout"
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:paddingLeft="@dimen/_25sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/salesCustomerProfile"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/profile_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_5">
+
+                    <TextView
+                        android:id="@+id/salesProfileName"
+                        style="@style/genral_6s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/salesProfileSiren"
+                        style="@style/genral_4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/saleProfileTVANo"
+                        style="@style/genral_4s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/companyRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@id/saleProfileLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/salesCompanyImage"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profile_placeholder" />
+
+                <TextView
+                    android:id="@+id/salesCompanyName"
+                    style="@style/genral_6s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/salesCompanyImage"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                    android:id="@+id/salePaymentLayout"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toRightOf="@id/companyRelative"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.65" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <TextView
+                    android:id="@+id/lblHeaderStatus"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_payment_status"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/salesLabelStatus"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/g1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/salesPaymentStatus"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/g1"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderStatus" />
+
+
+                <TextView
+                    android:id="@+id/lblHeaderBalance"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_eblance"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/salesLabelBalance"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g1"
+                    app:layout_constraintRight_toLeftOf="@id/g2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/salesBalanceAmount"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g1"
+                    app:layout_constraintRight_toLeftOf="@id/g2"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderBalance" />
+
+                <TextView
+                    android:id="@+id/lblHeaderOverdraft"
+                    style="@style/genral_4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_overdraft"
+                    android:drawablePadding="@dimen/_1sdp"
+                    android:text="@string/salesLabelOverdraft"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g2"
+                    app:layout_constraintRight_toLeftOf="@id/g3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/salesOverdraftAmount"
+                    style="@style/genral_8s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintLeft_toRightOf="@id/g2"
+                    app:layout_constraintRight_toLeftOf="@id/g3"
+                    app:layout_constraintTop_toBottomOf="@id/lblHeaderOverdraft" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/left_c_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_1sdp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/categoriesRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_16sdp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_sales_search"
+                                style="@style/InputTypeText_noborder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#f9f9f9"
+                                android:drawableLeft="@drawable/ic_search"
+                                android:drawablePadding="@dimen/_3sdp"
+                                android:hint="@string/proSearch"
+                                android:inputType="textPersonName"
+                                android:textColor="#0a4e65"
+                                android:textColorHint="#0a4e65" />
+
+                            <TextView
+                                android:id="@+id/btn_add"
+                                style="@style/white_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorDarkBlue"
+                                android:visibility="gone"
+                                android:drawableTop="@drawable/ic_add_cust"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingRight="@dimen/_8sdp"
+                                android:text="@string/pro_add_product"
+                                android:textSize="@dimen/_4sdp" />
+                        </LinearLayout>
+
+                        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                            android:id="@+id/pull_to_refresh_sales"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/sales_recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_btw_left_right">
+
+                        <RadioGroup
+                            android:id="@+id/salesOrdersRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_btn_hover"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_btw_left_right"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:background="@drawable/shadow_bg"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderLotNo"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderProduct"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderVariety"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderCatgories"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderCalibre"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderOrigin"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/sotvPrice"
+                                android:text="@string/salesOrderPrice"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderTare"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderQuantity"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderPackaging"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/sotvVat"
+                                android:text="@string/salesOrderVAT"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+                            <TextView
+                                style="@style/input_lable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sotvTotal"
+                                android:layout_weight="1"
+                                android:text="@string/salesOrderTotal"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/table_layout_h_text_size" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/v1"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#dedede"
+                            app:layout_constraintTop_toBottomOf="@id/linear1" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/sales_order_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+                            app:layout_constraintTop_toBottomOf="@id/v1" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/bottomLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent">
+
+                            <androidx.constraintlayout.widget.Guideline
+                                android:id="@+id/gm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintGuide_percent="0.65" />
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toLeftOf="@id/gm">
+
+                                <TextView
+                                    android:id="@+id/deliveryOptions"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:text="@string/salesOrderDeliveryOptions"
+                                    android:textColor="@color/colorBBlue"
+                                    android:textStyle="bold"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <RadioGroup
+                                    android:id="@+id/deliveryRadioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/deliveryOptions">
+
+                                    <RadioButton
+                                        android:id="@+id/sales_pick_check_box"
+                                        style="@style/item_list_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/salesOrderPickUp"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                    <RadioButton
+                                        android:id="@+id/sales_fast_check_box"
+                                        style="@style/item_list_style"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="@string/salesOrderFastDelivery"
+                                        android:textSize="@dimen/table_layout_h_text_size" />
+
+                                </RadioGroup>
+
+                                <com.google.android.flexbox.FlexboxLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:alignContent="stretch"
+                                    app:alignItems="stretch"
+                                    app:flexWrap="wrap"
+                                    app:layout_constraintTop_toBottomOf="@id/deliveryRadioGroup">
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_delete"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_delete_blue"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnDelete"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_print"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_print"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnPrint"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_add"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_btn_add"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnAdd"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_send"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_btn_send_blue"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnSend"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_invoice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_invoice_sel"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnInvoicing"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/btn_sales_preparation"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginTop="@dimen/_1sdp"
+                                        android:layout_marginBottom="@dimen/_3sdp"
+                                        android:background="@drawable/round_box_blue_border"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_3sdp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintLeft_toLeftOf="parent">
+
+                                        <TextView
+                                            style="@style/blue_button_4s"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center_horizontal"
+                                            android:drawableLeft="@drawable/ic_preparation_blue"
+                                            android:drawablePadding="@dimen/_2sdp"
+                                            android:gravity="center"
+                                            android:text="@string/salesOrderBtnPreparation"
+                                            android:textAllCaps="true" />
+
+                                    </LinearLayout>
+
+
+                                </com.google.android.flexbox.FlexboxLayout>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lighter_gray"
+                                android:padding="@dimen/_5sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="@id/gm"
+                                app:layout_constraintRight_toRightOf="parent">
+
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/gc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_percent="0.5" />
+
+
+                                <TextView
+                                    android:id="@+id/totalHT"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:text="@string/salesOrderTotalHT"
+                                    android:textColor="@color/colorBlack"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@id/gc"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/totalHTAnswer"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorBBlue"
+                                    app:layout_constraintLeft_toRightOf="@id/gc"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/totalTax"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:text="@string/salesOrderTotalTax"
+                                    android:textColor="@color/colorBlack"
+                                    android:visibility="gone"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@id/gc"
+                                    app:layout_constraintTop_toBottomOf="@id/totalHTAnswer" />
+
+
+                                <TextView
+                                    android:id="@+id/totalTaxAnswer"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_1sdp"
+                                    android:layout_marginEnd="@dimen/_1sdp"
+                                    android:textAlignment="textEnd"
+                                    android:visibility="gone"
+                                    android:textColor="@color/colorBBlue"
+                                    app:layout_constraintLeft_toRightOf="@id/gc"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/totalTax" />
+
+                                <TextView
+                                    android:id="@+id/delivery"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:text="@string/salesOrderDelivery"
+                                    android:textColor="@color/colorBlack"
+                                    android:visibility="gone"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@id/gc"
+                                    app:layout_constraintTop_toBottomOf="@id/totalTaxAnswer" />
+
+                                <TextView
+                                    android:id="@+id/deliveryAnswer"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_1sdp"
+                                    android:layout_marginEnd="@dimen/_1sdp"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorBBlue"
+                                    android:visibility="gone"
+                                    app:layout_constraintLeft_toRightOf="@id/gc"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/delivery" />
+
+                                <TextView
+                                    android:id="@+id/totalTAV"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:text="@string/salesOrderTotalTAV"
+                                    android:textColor="@color/colorBlack"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@id/gc"
+                                    app:layout_constraintTop_toBottomOf="@id/deliveryAnswer" />
+
+
+                                <TextView
+                                    android:id="@+id/totalTAVAnswer"
+                                    style="@style/genral_6s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_1sdp"
+                                    android:layout_marginEnd="@dimen/_1sdp"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorBBlue"
+                                    app:layout_constraintLeft_toRightOf="@id/gc"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/totalTAV" />
+
+
+                                <TextView
+                                    android:id="@+id/totalTTC"
+                                    style="@style/genral_7s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:text="@string/salesOrderTotalTTC"
+                                    android:textColor="@color/colorBlack"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@id/gc"
+                                    app:layout_constraintTop_toBottomOf="@id/totalTAVAnswer" />
+
+
+                                <TextView
+                                    android:id="@+id/totalTTCAnswer"
+                                    style="@style/genral_7s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_1sdp"
+                                    android:layout_marginEnd="@dimen/_1sdp"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorBBlue"
+                                    app:layout_constraintLeft_toRightOf="@id/gc"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/totalTTC" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

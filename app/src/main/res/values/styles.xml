@@ -1,0 +1,228 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="page_title">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="group_item_expandable">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="page_title_inner">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="input_lable">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorInputLbl</item>
+        <item name="android:layout_marginBottom">@dimen/_2sdp</item>
+    </style>
+
+    <style name="input_label_black">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_marginBottom">@dimen/_2sdp</item>
+    </style>
+
+    <style name="error_message">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_2sdp</item>
+        <item name="maxLine">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="InputTypeText">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:background">@drawable/round_box_stroke</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingLeft">@dimen/_5sdp</item>
+    </style>
+
+    <style name="input_lable_no_padd">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorInputLbl</item>
+    </style>
+
+    <style name="InputTypeText_bot_border">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/input_border_bottom</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextViewBlackColor">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:textColor">@color/colorInputLbl</item>
+        <item name="android:layout_marginBottom">@dimen/_2sdp</item>
+    </style>
+
+    <style name="InputTypeText_noborder">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:paddingLeft">@dimen/_5sdp</item>
+    </style>
+
+    <style name="white_button">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="blue_button">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="blue_button_4s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_4sdp</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="tab_button_left_nor">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingLeft">@dimen/_4sdp</item>
+        <item name="android:paddingRight">@dimen/_3sdp</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:drawablePadding">@dimen/_2sdp</item>
+    </style>
+
+    <style name="rb">
+        <item name="radioButtonStyle">@style/tab_button_left_nor</item>
+    </style>
+
+    <style name="tab_button_right_nor">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingLeft">@dimen/_9sdp</item>
+        <item name="android:paddingRight">@dimen/_9sdp</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:drawablePadding">@dimen/_2sdp</item>
+    </style>
+
+
+    <style name="blue_text_style">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_2sdp</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="footer_text_login">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:paddingLeft">@dimen/_1sdp</item>
+    </style>
+
+    <style name="footer_style">
+        <item name="android:background">@color/colorGray</item>
+        <item name="android:paddingTop">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">@dimen/_6sdp</item>
+        <item name="android:radius">10dip</item>
+    </style>
+
+    <style name="genral_5s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+    </style>
+
+    <style name="genral_5s_bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="genral_6s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+    </style>
+
+    <style name="genral_7s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+    </style>
+
+    <style name="genral_8s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <style name="genral_4s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_4sdp</item>
+    </style>
+
+    <style name="item_list_style">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+    </style>
+
+    <style name="check_box_6s">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+
+</resources>
